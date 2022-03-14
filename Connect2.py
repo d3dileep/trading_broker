@@ -10,7 +10,6 @@ from six.moves.urllib.parse import urljoin
 import json
 import logging
 import requests
-import Exception as ex
 from requests.adapters import HTTPAdapter
 import configparser
 
@@ -36,7 +35,7 @@ class XTSConnect(XTSCommon):
     """
     """Get the configurations from config.ini"""
     cfg = configparser.ConfigParser()
-    cfg.read('config.ini')
+    cfg.read('../config.ini')
 
     # Default root API endpoint. It's possible to
     # override this by passing the `root` parameter during initialisation.
