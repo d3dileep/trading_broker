@@ -35,7 +35,7 @@ class XTSConnect(XTSCommon):
     """
     """Get the configurations from config.ini"""
     cfg = configparser.ConfigParser()
-    cfg.read('../config.ini')
+    cfg.read('config.ini')
 
     # Default root API endpoint. It's possible to
     # override this by passing the `root` parameter during initialisation.
@@ -637,6 +637,7 @@ class XTSConnect(XTSCommon):
         # Form a restful URL
         uri = self._routes[route].format(params)
         url = urljoin(self.root, uri)
+        print(url)
         headers = {}
 
         if self.token:
