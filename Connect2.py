@@ -637,7 +637,7 @@ class XTSConnect(XTSCommon):
         # Form a restful URL
         uri = self._routes[route].format(params)
         url = urljoin(self.root, uri)
-        print(url)
+        #print(url)
         headers = {}
 
         if self.token:

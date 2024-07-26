@@ -23,6 +23,7 @@ def send_to_telegram(message):
 
 def check_buy(df):
     last_row = df.iloc[-1]
+    print(last_row)
     # Condition 1: RSI_14 to be upward and between 30 to 40
     condition1 = (last_row['RSI_14'] > df['RSI_14'].shift(1).iloc[-1]) & (last_row['RSI_14'] >= 30) & (last_row['RSI_14'] <= 40)
     # Condition 2: volume to be higher than avg_volume
@@ -84,7 +85,8 @@ def get_dat_xts(symbol, segment):
         try:
             if segment ==2:
                 index_df, _ = xts.read_data(26001, 300,1, days=3)
-                current_spot_price = index_df["close"].iloc[-1]
+                current_spot_price = (index_df["close"].iloc[-1]//100)*100
+                print("BANKNIFTY",index_df["close"].iloc[-1], current_spot_price)
                 # Find nearest expiry date
                 nearest_expiry = df_option.iloc[(pd.to_datetime(df_option['EXPIRY'], format='%d %b %y') - pd.to_datetime('today')).abs().argsort()[:1]]
                 # Find at-the-money (ATM) strike price
@@ -97,7 +99,7 @@ def get_dat_xts(symbol, segment):
                                     (df_option["EXPIRY"]==nearest_expiry['EXPIRY'].values[0])]
                 symbol_id_ce = df_filter["EXCHANGEID"].values[0]
                 symbol_id_pe = df_filter["EXCHANGEID"].values[1]
-            # print(symbol_id_ce, symbol_id_pe, segment)
+            print(symbol_id_ce, symbol_id_pe, segment)
 
             df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.rsi(append=True)
@@ -105,6 +107,7 @@ def get_dat_xts(symbol, segment):
             df_ce.dropna(inplace=True)
             df_ce.reset_index(drop=True, inplace=True)
             close_price_ce = df_ce["close"].iloc[-1]
+            #print(df_ce.shape, df_ce)
             if is_bought_ce:
                 if stoploss_ce < close_price_ce * 0.8:
                     stoploss_ce = close_price_ce * 0.8
@@ -139,6 +142,7 @@ def get_dat_xts(symbol, segment):
             time.sleep(60)
         except Exception as e:
             print(e)
+            raise
             continue
         
 get_dat_xts('BANKNIFTY', 2)
