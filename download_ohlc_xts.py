@@ -32,6 +32,32 @@ def check_buy(df):
         return True
     else:
         return False
+def parse_custom_date(date_string):
+  """Parses a date string in the format YY Mon DD into a datetime object using pandas."""
+  parts = date_string.split()
+  year, month, day = parts[0], parts[1], parts[2]
+  formatted_date = f"{day}-{month}-{year}"
+  return pd.to_datetime(formatted_date, format="%d-%b-%y")
+
+def get_nearest_expiry(df_option, symbol, current_spot_price):
+    # Convert EXPIRY to datetime if necessary
+    df_option['EXPIRY'] = df_option["EXPIRY"].apply(parse_custom_date)
+
+    # Filter options based on symbol and strike price (adjust filtering logic as needed)
+    filtered_df = df_option[(df_option['DESCRIPTION'].str.contains(symbol)) &
+                           (df_option['STRIKE'] == current_spot_price)]
+
+    if filtered_df.empty:
+        return None  # Handle case where no matching options found
+
+    # Calculate time difference to today
+    filtered_df['time_diff'] = (filtered_df['EXPIRY'] - pd.Timestamp('today')).dt.days
+
+    # Get the index of the option with the smallest positive time difference
+    nearest_expiry_index = filtered_df[filtered_df['time_diff'] > 0]['time_diff'].idxmin()
+    nearest_expiry = filtered_df.loc[nearest_expiry_index, 'EXPIRY']
+
+    return nearest_expiry
 
 def check_trailing_stop_loss(close_price, buy_price, stoploss):
     target_percentage = 1.0  # 100% target of buy_price
@@ -67,7 +93,9 @@ def get_dat_xts(symbol, segment):
             symbol_id = df_index[df_index["NAME OF COMPANY"]==symbol]["EXCHANGEID"].values[0]
     # Define IST timezone
     IST = pytz.timezone('Asia/Kolkata')
-
+    # fo_instr_list = xts.get_instr_list()
+    # all_expiries = sorted(list(set([datetime.datetime.strptime(str(x)[4:10], '%y%m%d') for x in fo_instr_list[0].tolist()])))
+    print("downloaded files")
     # Define start and end times in IST
     start_time = datetime.time(9, 15, 0)
     end_time = datetime.time(15, 30, 0)
@@ -80,23 +108,26 @@ def get_dat_xts(symbol, segment):
     buy_price_pe = 0
     stoploss_ce = 0
     stoploss_pe = 0
+    # Find nearest expiry date
+    index_df, _ = xts.read_data(26001, 300,1, days=3)
+    current_spot_price = (index_df["close"].iloc[-1]//100)*100
+    nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
     while current_time >= start_time and current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
         try:
             if segment ==2:
                 index_df, _ = xts.read_data(26001, 300,1, days=3)
                 current_spot_price = (index_df["close"].iloc[-1]//100)*100
-                print("BANKNIFTY",index_df["close"].iloc[-1], current_spot_price)
-                # Find nearest expiry date
-                nearest_expiry = df_option.iloc[(pd.to_datetime(df_option['EXPIRY'], format='%d %b %y') - pd.to_datetime('today')).abs().argsort()[:1]]
+                print("BANKNIFTY",index_df["close"].iloc[-1])
                 # Find at-the-money (ATM) strike price
                 atm_strike = df_option.iloc[(df_option['STRIKE'] - current_spot_price).abs().argsort()[:1]]
-                # print("Nearest expiry date:", nearest_expiry['EXPIRY'].values[0])
-                # print("At-the-money (ATM) strike price:", atm_strike['STRIKE'].values[0])        
+                print("Nearest expiry date:", nearest_expiry, symbol)
+                # df_option["EXPIRY"] = df_option["EXPIRY"].apply(parse_custom_date)
+                print("At-the-money (ATM) strike price:", atm_strike['STRIKE'].values[0])        
                 # if symbol in  df_option["NAME OF OPTION"].to_list():
                 df_filter = df_option[(df_option["NAME OF OPTION"].str.contains(symbol))&
                                     (df_option["STRIKE"]==atm_strike['STRIKE'].values[0])&
-                                    (df_option["EXPIRY"]==nearest_expiry['EXPIRY'].values[0])]
+                                    (df_option["EXPIRY"]==nearest_expiry)]
                 symbol_id_ce = df_filter["EXCHANGEID"].values[0]
                 symbol_id_pe = df_filter["EXCHANGEID"].values[1]
             print(symbol_id_ce, symbol_id_pe, segment)

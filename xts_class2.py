@@ -57,13 +57,7 @@ class XTS_parse:
             # Function to extract middle value
         df_index = pd.DataFrame({"Index":self.xt.get_index_list( exchangeSegment = 1)["result"]["indexList"]})
         df_index[['NAME OF COMPANY', 'EXCHANGEID']] = df_index['Index'].str.split('_', expand=True)
-        # Function to extract expiry date and strike price from option name
-        def extract_expiry_and_strike(option_name):
-            parts = option_name.split()
-            expiry_date = ' '.join(parts[1:4])
-            strike_price = float(parts[-2])
-            return expiry_date, strike_price
-
+        df_index.to_csv("index_id.csv")
         def split_stock(row):
             if '-' in row['NAME OF COMPANY']:
                 return pd.Series(row['NAME OF COMPANY'].split('-', 1))  # Split at the first occurrence of '-'
@@ -71,7 +65,6 @@ class XTS_parse:
                 return pd.Series([row['NAME OF COMPANY'], None])  # If no '-', return original value and None
 
         # Define URLs for CSV files
-        url_option = "https://public.fyers.in/sym_details/NSE_FO.csv"
         url_equity = "https://public.fyers.in/sym_details/NSE_CM.csv"
         
         # Determine today's date for file naming and comparison
@@ -87,14 +80,7 @@ class XTS_parse:
         
         # Check if files for today exist, otherwise download and save them
         if not os.path.exists(option_csv_path):
-            df_op = pd.read_csv(url_option, header=None)[[1,9,12,15]].dropna()
-            # print(df_op.iloc[1,:])
-            df_op.columns = ["NAME OF OPTION","DESCRIPTION" ,"EXCHANGEID","ATM" ]
-            df_op = df_op[~(df_op['NAME OF OPTION'].str.contains("FUT"))]
-            # Apply the function to extract expiry dates and strike prices
-            df_op['EXPIRY'], df_op['STRIKE'] = zip(*df_op['NAME OF OPTION'].apply(extract_expiry_and_strike))
-            df_op.sort_values(by="EXCHANGEID", inplace=True)
-            df_op.to_csv(option_csv_path, index=False)
+            df_op = self.get_instr_list()
         else:
             df_op = pd.read_csv(option_csv_path)
         
@@ -106,13 +92,12 @@ class XTS_parse:
             df_eq_fyer.sort_values(by="EXCHANGEID", inplace=True)
             df_eq_fyer.to_csv(equity_csv_path, index=False)
             # Delete previous day's CSV files if they exist
-            if os.path.exists(option_csv_previous):
-                os.remove(option_csv_previous)
-            if os.path.exists(equity_csv_previous):
-                os.remove(equity_csv_previous)
         else:
             df_eq_fyer = pd.read_csv(equity_csv_path)
-
+        if os.path.exists(option_csv_previous):
+            os.remove(option_csv_previous)
+        if os.path.exists(equity_csv_previous):
+            os.remove(equity_csv_previous)
         return df_op, df_index, df_eq_fyer
         
     def read_data(self, symbol_id, interval, exchange,division='NIFTY', days=5, prime=False):
@@ -154,9 +139,24 @@ class XTS_parse:
 
     def get_instr_list(self):
         nsefo_instr_url = 'http://public.fyers.in/sym_details/NSE_FO.csv'
+        today_date = datetime.now().date()
+        option_csv_path = f"NSE_FO_{today_date}.csv"
+
+        def extract_expiry_and_strike(option_name):
+            parts = option_name.split()
+            expiry_date = ' '.join(parts[1:4])
+            strike_price = float(parts[-2])
+            return expiry_date, strike_price
         s=requests.get(nsefo_instr_url).content
-        fo_instr=pd.read_csv(io.StringIO(s.decode('utf-8')), header=None)
-        fo_instr[1] = fo_instr[1].apply(lambda x: x.upper())
+        fo_instr=pd.read_csv(io.StringIO(s.decode('utf-8')), header=None)[[1,9,12,15]].dropna()
+        fo_instr.columns = ["NAME OF OPTION","DESCRIPTION" ,"EXCHANGEID","ATM" ]
+        fo_instr = fo_instr[~(fo_instr['NAME OF OPTION'].str.contains("FUT"))]
+        # Apply the function to extract expiry dates and strike prices
+        fo_instr['EXPIRY'], fo_instr['STRIKE'] = zip(*fo_instr['NAME OF OPTION'].apply(extract_expiry_and_strike))
+        fo_instr.sort_values(by="DESCRIPTION", inplace=True)
+        fo_instr["NAME OF OPTION"] = fo_instr["NAME OF OPTION"].apply(lambda x: x.upper())
+        fo_instr.to_csv(option_csv_path, index=False)
+        
 
         return fo_instr
 
