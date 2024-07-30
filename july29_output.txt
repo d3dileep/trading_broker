@@ -1,0 +1,4 @@
+API connection response: {'type': 'success', 'code': 'e-response-0010', 'description': 'Provided Valid Credentials', 'result': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJKSEQwM18xZDZjOTQxMGZkYjI5MWIwYTFkOTMzIiwicHVibGljS2V5IjoiMWQ2Yzk0MTBmZGIyOTFiMGExZDkzMyIsImlhdCI6MTcyMjIyNzE1NCwiZXhwIjoxNzIyMzEzNTU0fQ.hheTL2zHbZBawtK9khDR1iK3__byrUZzkAaRDkK9xCg', 'userID': 'JHD03', 'appVersion': '5.0.15'}}
+data_bnf_buy.ini
+BANKNIFTY
+downloaded files

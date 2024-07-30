@@ -1,0 +1,5386 @@
+API connection response: {'type': 'success', 'code': 'e-response-0010', 'description': 'Provided Valid Credentials', 'result': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJKSEQwM18xZDZjOTQxMGZkYjI5MWIwYTFkOTMzIiwicHVibGljS2V5IjoiMWQ2Yzk0MTBmZGIyOTFiMGExZDkzMyIsImlhdCI6MTcyMjMxMjQwMCwiZXhwIjoxNzIyMzk4ODAwfQ.kBjJceb3iz4Avr8NaCU_S-BNSWKUrxPxIZvI0y6RTqg', 'userID': 'JHD03', 'appVersion': '5.0.15'}}
+data_bnf_buy.ini
+BANKNIFTY
+downloaded files
+2024-08-07 00:00:00
+BANKNIFTY 51437.6
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:36:51
+open                        637.0
+high                       637.25
+low                        585.35
+close                      592.85
+volume                      16425
+oi                          85590
+RSI_14                  46.381238
+avg_volume               24009.75
+Name: 60, dtype: object
+date          2024-07-30 09:36:51
+open                        407.0
+high                        446.3
+low                         405.8
+close                      441.75
+volume                      20385
+oi                          92130
+RSI_14                  52.097995
+avg_volume               22545.75
+Name: 60, dtype: object
+BANKNIFTY 51481.95
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:37:52
+open                        637.0
+high                       637.25
+low                        585.35
+close                       611.1
+volume                      22155
+oi                          85590
+RSI_14                  48.416513
+avg_volume               24296.25
+Name: 60, dtype: object
+date          2024-07-30 09:37:56
+open                        407.0
+high                        446.3
+low                         405.8
+close                       430.5
+volume                      22935
+oi                          92130
+RSI_14                  50.595076
+avg_volume               22673.25
+Name: 60, dtype: object
+BANKNIFTY 51480.7
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:38:57
+open                        637.0
+high                       637.25
+low                        585.35
+close                      615.45
+volume                      25455
+oi                          85590
+RSI_14                  48.928274
+avg_volume               24461.25
+Name: 60, dtype: object
+date          2024-07-30 09:38:57
+open                        407.0
+high                        446.3
+low                         405.8
+close                       427.1
+volume                      26955
+oi                          92130
+RSI_14                  50.122125
+avg_volume               22874.25
+Name: 60, dtype: object
+BANKNIFTY 51477.8
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:40:01
+open                        610.0
+high                        611.9
+low                         610.0
+close                       611.9
+volume                        165
+oi                          86550
+RSI_14                  48.520659
+avg_volume                23571.0
+Name: 61, dtype: object
+date          2024-07-30 09:40:03
+open                       427.25
+high                       427.25
+low                        424.75
+close                      427.05
+volume                         60
+oi                          92565
+RSI_14                  50.068493
+avg_volume               21069.75
+Name: 61, dtype: object
+BANKNIFTY 51494.35
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:41:05
+open                        610.0
+high                       625.25
+low                        605.55
+close                       623.6
+volume                       4320
+oi                          86550
+RSI_14                  50.032487
+avg_volume               23778.75
+Name: 61, dtype: object
+date          2024-07-30 09:41:06
+open                       427.25
+high                       430.95
+low                         415.0
+close                      415.05
+volume                       4320
+oi                          92565
+RSI_14                  48.350657
+avg_volume               21282.75
+Name: 61, dtype: object
+BANKNIFTY 51472.85
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:42:07
+open                        610.0
+high                        632.1
+low                        603.85
+close                      609.95
+volume                       8505
+oi                          86550
+RSI_14                   48.27143
+avg_volume                23988.0
+Name: 61, dtype: object
+date          2024-07-30 09:42:09
+open                       427.25
+high                       432.75
+low                         410.0
+close                      427.15
+volume                       7665
+oi                          92565
+RSI_14                  50.083321
+avg_volume                21450.0
+Name: 61, dtype: object
+BANKNIFTY 51500.6
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:43:11
+open                       553.25
+high                       574.45
+low                         549.3
+close                       562.1
+volume                      21735
+oi                         420090
+RSI_14                  49.394756
+avg_volume                65001.0
+Name: 61, dtype: object
+date          2024-07-30 09:43:11
+open                        474.7
+high                       476.15
+low                        454.15
+close                       462.1
+volume                      27915
+oi                         321915
+RSI_14                   48.95985
+avg_volume               57330.75
+Name: 61, dtype: object
+BANKNIFTY 51568.55
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:44:14
+open                       553.25
+high                       598.75
+low                         549.3
+close                       588.5
+volume                      47655
+oi                         420090
+RSI_14                  52.651642
+avg_volume                66297.0
+Name: 61, dtype: object
+date          2024-07-30 09:44:15
+open                        474.7
+high                       476.15
+low                        433.35
+close                      438.35
+volume                      49425
+oi                         321915
+RSI_14                  46.154368
+avg_volume               58406.25
+Name: 61, dtype: object
+BANKNIFTY 51558.45
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:45:17
+open                        604.2
+high                        606.9
+low                         582.8
+close                       582.8
+volume                      11820
+oi                         420090
+RSI_14                  51.613458
+avg_volume               65768.25
+Name: 62, dtype: object
+date          2024-07-30 09:45:17
+open                        424.0
+high                       439.75
+low                         422.5
+close                       437.4
+volume                       6750
+oi                         321915
+RSI_14                  46.293371
+avg_volume               57284.25
+Name: 62, dtype: object
+BANKNIFTY 51551.15
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:46:20
+open                        604.2
+high                        606.9
+low                         574.7
+close                      580.35
+volume                      30720
+oi                         412815
+RSI_14                  51.311133
+avg_volume               66713.25
+Name: 62, dtype: object
+date          2024-07-30 09:46:21
+open                        424.0
+high                       446.35
+low                         422.5
+close                      446.35
+volume                      21075
+oi                         331755
+RSI_14                  47.460988
+avg_volume                58000.5
+Name: 62, dtype: object
+BANKNIFTY 51552.45
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:47:23
+open                        604.2
+high                        606.9
+low                         574.7
+close                      587.85
+volume                      46125
+oi                         412815
+RSI_14                  52.247995
+avg_volume                67483.5
+Name: 62, dtype: object
+date          2024-07-30 09:47:25
+open                        424.0
+high                        448.0
+low                         422.5
+close                       443.3
+volume                      34260
+oi                         331755
+RSI_14                   47.06883
+avg_volume               58659.75
+Name: 62, dtype: object
+BANKNIFTY 51462.6
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:48:26
+open                        664.0
+high                        666.0
+low                        595.45
+close                       604.9
+volume                      21705
+oi                          79785
+RSI_14                  47.705497
+avg_volume                25513.5
+Name: 62, dtype: object
+date          2024-07-30 09:48:28
+open                        385.0
+high                        440.0
+low                         382.0
+close                       440.0
+volume                      17010
+oi                         102480
+RSI_14                  52.011721
+avg_volume               22838.25
+Name: 62, dtype: object
+BANKNIFTY 51408.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:49:30
+open                        664.0
+high                        666.0
+low                         544.0
+close                      582.45
+volume                      45240
+oi                          77610
+RSI_14                  45.482035
+avg_volume               26690.25
+Name: 62, dtype: object
+date          2024-07-30 09:49:31
+open                        385.0
+high                       482.25
+low                         382.0
+close                      458.25
+volume                      46905
+oi                          97305
+RSI_14                  54.097665
+avg_volume                24333.0
+Name: 62, dtype: object
+BANKNIFTY 51406.45
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:50:33
+open                       578.85
+high                       586.85
+low                         575.8
+close                      580.05
+volume                       4080
+oi                          77610
+RSI_14                  45.297317
+avg_volume                25960.5
+Name: 63, dtype: object
+date          2024-07-30 09:50:34
+open                       456.75
+high                        461.6
+low                         451.0
+close                       458.7
+volume                       2295
+oi                          97305
+RSI_14                  54.070718
+avg_volume                23986.5
+Name: 63, dtype: object
+BANKNIFTY 51476.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:51:36
+open                       578.85
+high                       630.95
+low                         575.8
+close                       608.2
+volume                      14775
+oi                          77610
+RSI_14                  48.502425
+avg_volume               26495.25
+Name: 63, dtype: object
+date          2024-07-30 09:51:36
+open                       456.75
+high                        462.0
+low                         410.0
+close                      428.65
+volume                      15390
+oi                          97305
+RSI_14                  50.250693
+avg_volume               24641.25
+Name: 63, dtype: object
+BANKNIFTY 51483.6
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:52:37
+open                       578.85
+high                       630.95
+low                         575.8
+close                       615.4
+volume                      19695
+oi                          83130
+RSI_14                  49.262778
+avg_volume               26741.25
+Name: 63, dtype: object
+date          2024-07-30 09:52:40
+open                       456.75
+high                        462.0
+low                         410.0
+close                       424.0
+volume                      18885
+oi                          95220
+RSI_14                  49.707276
+avg_volume                24816.0
+Name: 63, dtype: object
+BANKNIFTY 51493.45
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:53:42
+open                       578.85
+high                       630.95
+low                         575.8
+close                       625.0
+volume                      24315
+oi                          83130
+RSI_14                  50.242328
+avg_volume               26972.25
+Name: 63, dtype: object
+date          2024-07-30 09:53:43
+open                       456.75
+high                        462.0
+low                         410.0
+close                       412.0
+volume                      22935
+oi                          95220
+RSI_14                  48.357739
+avg_volume                25018.5
+Name: 63, dtype: object
+BANKNIFTY 51483.7
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:54:45
+open                       578.85
+high                       630.95
+low                         575.8
+close                       604.0
+volume                      29325
+oi                          83250
+RSI_14                  48.048269
+avg_volume               27222.75
+Name: 63, dtype: object
+date          2024-07-30 09:54:46
+open                       456.75
+high                        462.0
+low                         410.0
+close                      431.05
+volume                      27855
+oi                          98535
+RSI_14                  50.535841
+avg_volume                25264.5
+Name: 63, dtype: object
+BANKNIFTY 51475.45
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:55:48
+open                       614.25
+high                        620.0
+low                         599.9
+close                       606.9
+volume                       3345
+oi                          83250
+RSI_14                  48.353619
+avg_volume               25631.25
+Name: 64, dtype: object
+date          2024-07-30 09:55:50
+open                        418.7
+high                       435.35
+low                         416.2
+close                       431.1
+volume                       2700
+oi                          98535
+RSI_14                   50.60285
+avg_volume               24408.75
+Name: 64, dtype: object
+BANKNIFTY 51474.1
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:56:51
+open                       614.25
+high                        620.0
+low                        594.55
+close                       605.4
+volume                       5910
+oi                          83250
+RSI_14                  48.198006
+avg_volume                25759.5
+Name: 64, dtype: object
+date          2024-07-30 09:56:48
+open                        418.7
+high                        436.4
+low                         416.2
+close                       428.2
+volume                       8670
+oi                          98535
+RSI_14                  50.252581
+avg_volume               24707.25
+Name: 64, dtype: object
+BANKNIFTY 51440.75
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:57:53
+open                       614.25
+high                        620.0
+low                        588.15
+close                       590.3
+volume                       7740
+oi                          84120
+RSI_14                  46.685534
+avg_volume                25851.0
+Name: 64, dtype: object
+date          2024-07-30 09:57:56
+open                        418.7
+high                        447.0
+low                         416.2
+close                       440.7
+volume                      12270
+oi                          98580
+RSI_14                  51.727972
+avg_volume               24887.25
+Name: 64, dtype: object
+BANKNIFTY 51442.75
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 09:58:57
+open                       614.25
+high                        620.0
+low                        588.15
+close                      593.45
+volume                       9570
+oi                          84120
+RSI_14                  46.993163
+avg_volume                25942.5
+Name: 64, dtype: object
+date          2024-07-30 09:58:58
+open                        418.7
+high                        447.0
+low                         416.2
+close                      438.45
+volume                      20115
+oi                          98580
+RSI_14                  51.468895
+avg_volume                25279.5
+Name: 64, dtype: object
+BANKNIFTY 51441.35
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:00:01
+open                        584.1
+high                        590.4
+low                         584.1
+close                       590.4
+volume                        255
+oi                          84120
+RSI_14                  46.807392
+avg_volume               25661.25
+Name: 65, dtype: object
+date          2024-07-30 10:00:02
+open                        451.0
+high                        451.0
+low                         445.9
+close                       445.9
+volume                        120
+oi                          98580
+RSI_14                  52.232767
+avg_volume                25179.0
+Name: 65, dtype: object
+BANKNIFTY 51423.8
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:01:03
+open                        584.1
+high                       591.65
+low                         577.4
+close                       577.5
+volume                       3645
+oi                          85410
+RSI_14                  45.421036
+avg_volume               25830.75
+Name: 65, dtype: object
+date          2024-07-30 10:01:06
+open                        451.0
+high                        459.0
+low                        444.85
+close                       459.0
+volume                       5850
+oi                         100230
+RSI_14                  53.808577
+avg_volume                25465.5
+Name: 65, dtype: object
+BANKNIFTY 51395.45
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:02:07
+open                        640.8
+high                        647.2
+low                        626.65
+close                      634.35
+volume                       3930
+oi                          53085
+RSI_14                  45.638514
+avg_volume                17569.5
+Name: 65, dtype: object
+date          2024-07-30 10:02:07
+open                       405.45
+high                       419.55
+low                        404.15
+close                       415.1
+volume                       6150
+oi                          94605
+RSI_14                  53.677549
+avg_volume                21328.5
+Name: 65, dtype: object
+BANKNIFTY 51420.35
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:03:11
+open                        584.1
+high                        592.0
+low                         565.0
+close                       592.0
+volume                       9525
+oi                          85410
+RSI_14                  46.993112
+avg_volume               26124.75
+Name: 65, dtype: object
+date          2024-07-30 10:03:12
+open                        451.0
+high                        470.0
+low                        444.85
+close                      450.35
+volume                      24210
+oi                         100230
+RSI_14                   52.81056
+avg_volume                26383.5
+Name: 65, dtype: object
+BANKNIFTY 51394.35
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:04:14
+open                        640.8
+high                       654.05
+low                         616.9
+close                      627.05
+volume                      14895
+oi                          55470
+RSI_14                  44.973239
+avg_volume               18117.75
+Name: 65, dtype: object
+date          2024-07-30 10:04:15
+open                       405.45
+high                        425.0
+low                        404.15
+close                      416.15
+volume                      16425
+oi                          94500
+RSI_14                  53.805243
+avg_volume               21842.25
+Name: 65, dtype: object
+BANKNIFTY 51401.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:05:16
+open                       569.25
+high                       570.35
+low                        560.85
+close                      561.45
+volume                       5160
+oi                          86565
+RSI_14                  43.872376
+avg_volume                26416.5
+Name: 66, dtype: object
+date          2024-07-30 10:05:18
+open                       461.65
+high                       463.25
+low                         455.0
+close                      459.45
+volume                       6285
+oi                         101100
+RSI_14                   53.86411
+avg_volume               26772.75
+Name: 66, dtype: object
+BANKNIFTY 51345.05
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:06:20
+open                        622.6
+high                       625.15
+low                         593.6
+close                       593.6
+volume                      11670
+oi                          55470
+RSI_14                  42.001918
+avg_volume               18680.25
+Name: 66, dtype: object
+date          2024-07-30 10:06:22
+open                       412.75
+high                        448.0
+low                        412.75
+close                      447.85
+volume                      16410
+oi                          94500
+RSI_14                  57.609665
+avg_volume               22491.75
+Name: 66, dtype: object
+BANKNIFTY 51343.0
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:07:24
+open                        622.6
+high                       625.15
+low                         577.1
+close                       593.4
+volume                      23025
+oi                          60540
+RSI_14                  41.985053
+avg_volume                19248.0
+Name: 66, dtype: object
+date          2024-07-30 10:07:25
+open                       412.75
+high                        460.1
+low                        412.75
+close                       439.9
+volume                      29325
+oi                          94845
+RSI_14                  56.716904
+avg_volume                23137.5
+Name: 66, dtype: object
+BANKNIFTY 51375.9
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:08:28
+open                        622.6
+high                       625.15
+low                         577.1
+close                      599.95
+volume                      29820
+oi                          60540
+RSI_14                  42.544498
+avg_volume               19587.75
+Name: 66, dtype: object
+date          2024-07-30 10:08:28
+open                       412.75
+high                        460.1
+low                        412.75
+close                      437.75
+volume                      36270
+oi                          94845
+RSI_14                  56.468968
+avg_volume               23484.75
+Name: 66, dtype: object
+BANKNIFTY 51348.9
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:09:31
+open                        622.6
+high                       625.15
+low                         577.1
+close                      585.75
+volume                      42825
+oi                          60540
+RSI_14                  41.350001
+avg_volume                20238.0
+Name: 66, dtype: object
+date          2024-07-30 10:09:32
+open                       412.75
+high                        460.1
+low                        412.75
+close                       449.7
+volume                      49830
+oi                          94845
+RSI_14                  57.812158
+avg_volume               24162.75
+Name: 66, dtype: object
+BANKNIFTY 51385.4
+At-the-money (ATM) strike price: 51300.0
+                    NAME OF OPTION  ...   STRIKE
+9445  BANKNIFTY 24 AUG 07 51300 CE  ...  51300.0
+9446  BANKNIFTY 24 AUG 07 51300 PE  ...  51300.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:10:34
+open                       594.15
+high                        608.0
+low                        594.15
+close                      607.05
+volume                       1410
+oi                          67905
+RSI_14                  43.633098
+avg_volume                20119.5
+Name: 67, dtype: object
+date          2024-07-30 10:10:33
+open                       440.55
+high                       440.55
+low                        423.65
+close                       427.9
+volume                       5310
+oi                          89220
+RSI_14                  54.701772
+avg_volume               24396.75
+Name: 67, dtype: object
+BANKNIFTY 51423.9
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:11:37
+open                        538.4
+high                        570.7
+low                         538.4
+close                       569.8
+volume                      11355
+oi                          97710
+RSI_14                  45.654178
+avg_volume                28357.5
+Name: 67, dtype: object
+date          2024-07-30 10:11:38
+open                       487.75
+high                       487.75
+low                         451.4
+close                       453.1
+volume                      11205
+oi                          90975
+RSI_14                  52.266203
+avg_volume               30321.75
+Name: 67, dtype: object
+BANKNIFTY 51418.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:12:41
+open                        538.4
+high                        577.0
+low                         538.4
+close                      570.55
+volume                      20250
+oi                          97710
+RSI_14                  45.742074
+avg_volume               28802.25
+Name: 67, dtype: object
+date          2024-07-30 10:12:41
+open                       487.75
+high                       487.75
+low                         445.3
+close                       452.1
+volume                      21450
+oi                          90975
+RSI_14                  52.140818
+avg_volume                30834.0
+Name: 67, dtype: object
+BANKNIFTY 51464.75
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:13:44
+open                        538.4
+high                       585.85
+low                         538.4
+close                      585.85
+volume                      27870
+oi                          96165
+RSI_14                  47.475083
+avg_volume               29183.25
+Name: 67, dtype: object
+date          2024-07-30 10:13:45
+open                       487.75
+high                       487.75
+low                         434.8
+close                      435.25
+volume                      31590
+oi                          96990
+RSI_14                  50.115024
+avg_volume                31341.0
+Name: 67, dtype: object
+BANKNIFTY 51469.55
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:14:46
+open                        538.4
+high                       598.25
+low                         538.4
+close                       589.6
+volume                      37275
+oi                          96165
+RSI_14                   47.88308
+avg_volume                29653.5
+Name: 67, dtype: object
+date          2024-07-30 10:14:48
+open                       487.75
+high                       487.75
+low                         422.0
+close                      426.15
+volume                      37155
+oi                          96990
+RSI_14                  49.085092
+avg_volume               31619.25
+Name: 67, dtype: object
+BANKNIFTY 51456.15
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:15:51
+open                       593.05
+high                       593.05
+low                         572.9
+close                      575.45
+volume                       6495
+oi                          96015
+RSI_14                  46.431873
+avg_volume                29494.5
+Name: 68, dtype: object
+date          2024-07-30 10:15:52
+open                       427.95
+high                       447.05
+low                         423.8
+close                      443.75
+volume                      12195
+oi                          98655
+RSI_14                  51.174139
+avg_volume               32000.25
+Name: 68, dtype: object
+BANKNIFTY 51490.7
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:16:54
+open                       593.05
+high                        598.8
+low                        568.45
+close                      593.65
+volume                      13155
+oi                          96015
+RSI_14                    48.3338
+avg_volume                29827.5
+Name: 68, dtype: object
+date          2024-07-30 10:16:55
+open                       427.95
+high                        451.7
+low                         423.8
+close                       433.3
+volume                      18075
+oi                          98655
+RSI_14                  49.952723
+avg_volume               32294.25
+Name: 68, dtype: object
+BANKNIFTY 51478.05
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9447  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9448  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:17:55
+open                       593.05
+high                        598.8
+low                        568.45
+close                      592.05
+volume                      18435
+oi                          96015
+RSI_14                  48.150341
+avg_volume                30091.5
+Name: 68, dtype: object
+date          2024-07-30 10:17:55
+open                       427.95
+high                        451.7
+low                         423.8
+close                       431.7
+volume                      21075
+oi                          98655
+RSI_14                  49.760296
+avg_volume               32444.25
+Name: 68, dtype: object
+BANKNIFTY 51514.2
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:19:00
+open                        539.3
+high                       553.35
+low                         514.0
+close                      550.35
+volume                      60435
+oi                         532515
+RSI_14                  49.758375
+avg_volume               83346.75
+Name: 68, dtype: object
+date          2024-07-30 10:19:01
+open                        469.6
+high                        496.9
+low                         456.1
+close                       461.0
+volume                      43410
+oi                         410940
+RSI_14                  48.163786
+avg_volume               74913.75
+Name: 68, dtype: object
+BANKNIFTY 51504.9
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:20:03
+open                        552.0
+high                        552.0
+low                         544.6
+close                       544.6
+volume                       1485
+oi                         532515
+RSI_14                  49.079051
+avg_volume                82507.5
+Name: 69, dtype: object
+date          2024-07-30 10:20:03
+open                       461.05
+high                        466.6
+low                        461.05
+close                       466.6
+volume                        810
+oi                         410940
+RSI_14                  48.839151
+avg_volume                73909.5
+Name: 69, dtype: object
+BANKNIFTY 51508.7
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:21:07
+open                        552.0
+high                        561.4
+low                         542.6
+close                       546.5
+volume                      23430
+oi                         532515
+RSI_14                   49.29579
+avg_volume               83604.75
+Name: 69, dtype: object
+date          2024-07-30 10:21:08
+open                       461.05
+high                        468.0
+low                         449.2
+close                       462.5
+volume                      15675
+oi                         410940
+RSI_14                  48.358325
+avg_volume               74652.75
+Name: 69, dtype: object
+BANKNIFTY 51520.05
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:22:10
+open                        552.0
+high                        561.4
+low                         538.1
+close                      556.95
+volume                      32565
+oi                         522990
+RSI_14                  50.512669
+avg_volume                84061.5
+Name: 69, dtype: object
+date          2024-07-30 10:22:12
+open                       461.05
+high                        469.0
+low                         449.2
+close                      455.15
+volume                      24090
+oi                         414765
+RSI_14                  47.529224
+avg_volume                75073.5
+Name: 69, dtype: object
+BANKNIFTY 51549.4
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:23:13
+open                        552.0
+high                        572.0
+low                         538.1
+close                      562.65
+volume                      51270
+oi                         522990
+RSI_14                  51.162781
+avg_volume               84996.75
+Name: 69, dtype: object
+date          2024-07-30 10:23:15
+open                       461.05
+high                        469.0
+low                         449.2
+close                       458.0
+volume                      41505
+oi                         414765
+RSI_14                  47.840088
+avg_volume               75944.25
+Name: 69, dtype: object
+BANKNIFTY 51528.2
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:24:17
+open                        552.0
+high                        572.0
+low                         538.1
+close                      552.45
+volume                      61845
+oi                         522990
+RSI_14                  49.987085
+avg_volume                85525.5
+Name: 69, dtype: object
+date          2024-07-30 10:24:17
+open                       461.05
+high                        469.0
+low                         449.2
+close                       464.1
+volume                      51660
+oi                         414765
+RSI_14                  48.547036
+avg_volume                76452.0
+Name: 69, dtype: object
+BANKNIFTY 51535.15
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:25:20
+open                       558.55
+high                       562.55
+low                        552.85
+close                      562.15
+volume                       3825
+oi                         519495
+RSI_14                  51.132892
+avg_volume               81531.75
+Name: 70, dtype: object
+date          2024-07-30 10:25:21
+open                       460.95
+high                       462.05
+low                         455.0
+close                      455.25
+volume                       1800
+oi                         420015
+RSI_14                  47.505895
+avg_volume                73762.5
+Name: 70, dtype: object
+BANKNIFTY 51555.45
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:26:23
+open                       558.55
+high                       570.75
+low                        552.85
+close                       569.2
+volume                      14310
+oi                         519495
+RSI_14                  51.973779
+avg_volume                82056.0
+Name: 70, dtype: object
+date          2024-07-30 10:26:24
+open                       460.95
+high                       462.05
+low                         449.0
+close                       452.5
+volume                      15945
+oi                         420015
+RSI_14                  47.187428
+avg_volume               74469.75
+Name: 70, dtype: object
+BANKNIFTY 51582.05
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:27:26
+open                       558.55
+high                       597.55
+low                        552.85
+close                       577.9
+volume                      45330
+oi                         519495
+RSI_14                  52.972406
+avg_volume                83607.0
+Name: 70, dtype: object
+date          2024-07-30 10:27:27
+open                       460.95
+high                       462.05
+low                         430.2
+close                      441.95
+volume                      49185
+oi                         420015
+RSI_14                  46.004292
+avg_volume               76131.75
+Name: 70, dtype: object
+BANKNIFTY 51607.15
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:28:29
+open                       502.95
+high                        540.8
+low                         500.0
+close                       532.6
+volume                      28770
+oi                         116400
+RSI_14                  53.992497
+avg_volume                24402.0
+Name: 70, dtype: object
+date          2024-07-30 10:28:31
+open                        504.0
+high                        509.5
+low                         471.6
+close                       474.9
+volume                      17220
+oi                          77850
+RSI_14                  44.551613
+avg_volume                19498.5
+Name: 70, dtype: object
+BANKNIFTY 51589.05
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:29:33
+open                       558.55
+high                        598.9
+low                        552.85
+close                       583.8
+volume                      85980
+oi                         507990
+RSI_14                  53.626334
+avg_volume                85639.5
+Name: 70, dtype: object
+date          2024-07-30 10:29:34
+open                       460.95
+high                       462.05
+low                         424.2
+close                      435.45
+volume                      87285
+oi                         424380
+RSI_14                  45.304434
+avg_volume               78036.75
+Name: 70, dtype: object
+BANKNIFTY 51594.8
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:30:36
+open                        584.1
+high                       592.55
+low                         576.5
+close                       586.9
+volume                       7230
+oi                         507990
+RSI_14                  53.995393
+avg_volume               82047.75
+Name: 71, dtype: object
+date          2024-07-30 10:30:37
+open                        434.3
+high                        440.0
+low                         430.7
+close                       435.4
+volume                       6615
+oi                         424380
+RSI_14                  45.298317
+avg_volume                74310.0
+Name: 71, dtype: object
+BANKNIFTY 51599.35
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:31:39
+open                        584.1
+high                       592.55
+low                         576.5
+close                       588.0
+volume                      14115
+oi                         501225
+RSI_14                  54.122459
+avg_volume                82392.0
+Name: 71, dtype: object
+date          2024-07-30 10:31:40
+open                        434.3
+high                        440.0
+low                         430.7
+close                      435.65
+volume                      12270
+oi                         422520
+RSI_14                  45.330408
+avg_volume               74592.75
+Name: 71, dtype: object
+BANKNIFTY 51564.65
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:32:42
+open                        584.1
+high                        599.9
+low                        544.95
+close                      572.65
+volume                      47535
+oi                         501225
+RSI_14                  52.166742
+avg_volume                84063.0
+Name: 71, dtype: object
+date          2024-07-30 10:32:42
+open                        434.3
+high                       466.15
+low                         430.7
+close                       450.0
+volume                      36060
+oi                         422520
+RSI_14                  47.238242
+avg_volume               75782.25
+Name: 71, dtype: object
+BANKNIFTY 51572.55
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:33:42
+open                        584.1
+high                        599.9
+low                        544.95
+close                       574.3
+volume                      54705
+oi                         501225
+RSI_14                  52.380937
+avg_volume                84421.5
+Name: 71, dtype: object
+date          2024-07-30 10:33:46
+open                        434.3
+high                       466.15
+low                         430.7
+close                      445.35
+volume                      43110
+oi                         422520
+RSI_14                  46.634774
+avg_volume               76134.75
+Name: 71, dtype: object
+BANKNIFTY 51570.75
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:34:47
+open                        584.1
+high                        599.9
+low                        544.95
+close                       575.3
+volume                      59565
+oi                         501420
+RSI_14                  52.511609
+avg_volume                84664.5
+Name: 71, dtype: object
+date          2024-07-30 10:34:44
+open                        434.3
+high                       466.15
+low                         430.7
+close                       449.1
+volume                      45090
+oi                         416085
+RSI_14                  47.122509
+avg_volume               76233.75
+Name: 71, dtype: object
+BANKNIFTY 51574.85
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9449  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9450  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:35:50
+open                        572.0
+high                        579.9
+low                         568.7
+close                      574.35
+volume                       3765
+oi                         501420
+RSI_14                  52.387178
+avg_volume               82509.75
+Name: 72, dtype: object
+date          2024-07-30 10:35:47
+open                       449.25
+high                       452.15
+low                        443.35
+close                      450.25
+volume                       3030
+oi                         416085
+RSI_14                  47.325448
+avg_volume                73561.5
+Name: 72, dtype: object
+BANKNIFTY 51608.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:36:54
+open                       516.85
+high                       544.45
+low                         515.0
+close                      542.95
+volume                      15600
+oi                         117570
+RSI_14                  55.237825
+avg_volume               26534.25
+Name: 72, dtype: object
+date          2024-07-30 10:36:55
+open                       495.45
+high                        499.0
+low                         470.0
+close                       470.0
+volume                       8475
+oi                          85755
+RSI_14                  44.141097
+avg_volume                21228.0
+Name: 72, dtype: object
+BANKNIFTY 51616.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:37:56
+open                       516.85
+high                       560.75
+low                         515.0
+close                      535.15
+volume                      34140
+oi                         117570
+RSI_14                  54.261681
+avg_volume               27461.25
+Name: 72, dtype: object
+date          2024-07-30 10:37:59
+open                       495.45
+high                        499.0
+low                         457.3
+close                      471.55
+volume                      21675
+oi                          85755
+RSI_14                  44.309297
+avg_volume                21888.0
+Name: 72, dtype: object
+BANKNIFTY 51637.4
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:39:01
+open                       516.85
+high                       560.75
+low                         515.0
+close                      546.85
+volume                      38700
+oi                         117570
+RSI_14                  55.710437
+avg_volume               27689.25
+Name: 72, dtype: object
+date          2024-07-30 10:39:02
+open                       495.45
+high                        499.0
+low                         457.3
+close                       472.4
+volume                      24060
+oi                          85755
+RSI_14                  44.402082
+avg_volume               22007.25
+Name: 72, dtype: object
+BANKNIFTY 51646.3
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:40:04
+open                       553.75
+high                       554.75
+low                         550.0
+close                       550.0
+volume                       1410
+oi                         115605
+RSI_14                  55.871786
+avg_volume                27505.5
+Name: 73, dtype: object
+date          2024-07-30 10:40:04
+open                       464.05
+high                        465.8
+low                        463.35
+close                       465.8
+volume                        780
+oi                          91875
+RSI_14                  43.785093
+avg_volume                21709.5
+Name: 73, dtype: object
+BANKNIFTY 51659.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:41:09
+open                       553.75
+high                        581.0
+low                         549.8
+close                       560.9
+volume                      28335
+oi                         115605
+RSI_14                  57.384215
+avg_volume               28851.75
+Name: 73, dtype: object
+date          2024-07-30 10:41:10
+open                       464.05
+high                        465.8
+low                        441.65
+close                      457.45
+volume                      13155
+oi                          91875
+RSI_14                   42.77754
+avg_volume               22328.25
+Name: 73, dtype: object
+BANKNIFTY 51666.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:42:12
+open                       553.75
+high                        581.0
+low                         549.8
+close                      571.55
+volume                      38715
+oi                         115605
+RSI_14                  58.620498
+avg_volume               29370.75
+Name: 73, dtype: object
+date          2024-07-30 10:42:13
+open                       464.05
+high                        465.8
+low                        441.65
+close                      455.35
+volume                      22500
+oi                          91875
+RSI_14                  42.549154
+avg_volume                22795.5
+Name: 73, dtype: object
+BANKNIFTY 51677.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:43:14
+open                       553.75
+high                        581.0
+low                         549.8
+close                       570.6
+volume                      44835
+oi                         117495
+RSI_14                   58.51314
+avg_volume               29676.75
+Name: 73, dtype: object
+date          2024-07-30 10:43:16
+open                       464.05
+high                        465.8
+low                        441.65
+close                       458.0
+volume                      27165
+oi                          94455
+RSI_14                  42.837761
+avg_volume               23028.75
+Name: 73, dtype: object
+BANKNIFTY 51655.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:44:18
+open                       553.75
+high                        581.0
+low                        548.05
+close                       552.3
+volume                      53190
+oi                         117495
+RSI_14                  56.235653
+avg_volume                30094.5
+Name: 73, dtype: object
+date          2024-07-30 10:44:20
+open                       464.05
+high                       469.35
+low                        441.65
+close                      469.35
+volume                      32520
+oi                          94455
+RSI_14                  44.295433
+avg_volume                23296.5
+Name: 73, dtype: object
+BANKNIFTY 51664.25
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:45:22
+open                        560.0
+high                        560.0
+low                        553.85
+close                       555.2
+volume                       3030
+oi                         117495
+RSI_14                   56.50128
+avg_volume               29478.75
+Name: 74, dtype: object
+date          2024-07-30 10:45:23
+open                       465.35
+high                        467.0
+low                         464.7
+close                       465.8
+volume                       1935
+oi                          94455
+RSI_14                  43.806288
+avg_volume               23018.25
+Name: 74, dtype: object
+BANKNIFTY 51643.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:46:25
+open                        560.0
+high                        560.0
+low                         514.2
+close                       547.4
+volume                      14310
+oi                         115695
+RSI_14                  55.208631
+avg_volume               30042.75
+Name: 74, dtype: object
+date          2024-07-30 10:46:26
+open                       465.35
+high                       497.15
+low                         464.7
+close                      470.15
+volume                      12780
+oi                          95280
+RSI_14                  44.477287
+avg_volume                23560.5
+Name: 74, dtype: object
+BANKNIFTY 51623.85
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:47:27
+open                        560.0
+high                        560.0
+low                         514.2
+close                      537.05
+volume                      20265
+oi                         115695
+RSI_14                  53.582008
+avg_volume                30340.5
+Name: 74, dtype: object
+date          2024-07-30 10:47:27
+open                       465.35
+high                       497.15
+low                         464.7
+close                       480.6
+volume                      15090
+oi                          95280
+RSI_14                  46.025565
+avg_volume                23676.0
+Name: 74, dtype: object
+BANKNIFTY 51653.65
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:48:31
+open                        560.0
+high                        560.0
+low                         514.2
+close                      556.95
+volume                      25950
+oi                         115695
+RSI_14                  56.799655
+avg_volume               30624.75
+Name: 74, dtype: object
+date          2024-07-30 10:48:31
+open                       465.35
+high                       497.15
+low                         464.7
+close                       467.8
+volume                      18825
+oi                          95280
+RSI_14                  44.116796
+avg_volume               23862.75
+Name: 74, dtype: object
+BANKNIFTY 51628.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:49:33
+open                        560.0
+high                        560.0
+low                         514.2
+close                      545.35
+volume                      29190
+oi                         118560
+RSI_14                  54.878653
+avg_volume               30786.75
+Name: 74, dtype: object
+date          2024-07-30 10:49:32
+open                       465.35
+high                       497.15
+low                         464.7
+close                      479.35
+volume                      20760
+oi                          95835
+RSI_14                  45.844926
+avg_volume                23959.5
+Name: 74, dtype: object
+BANKNIFTY 51634.1
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:50:37
+open                       542.35
+high                        546.5
+low                         540.0
+close                      545.75
+volume                       2235
+oi                         118560
+RSI_14                  54.915795
+avg_volume                29817.0
+Name: 75, dtype: object
+date          2024-07-30 10:50:35
+open                        479.2
+high                        482.2
+low                        477.35
+close                       478.2
+volume                       4650
+oi                          95835
+RSI_14                    45.7029
+avg_volume                23560.5
+Name: 75, dtype: object
+BANKNIFTY 51625.9
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:51:41
+open                       542.35
+high                        546.5
+low                         528.0
+close                      538.25
+volume                       5175
+oi                         118560
+RSI_14                  53.694294
+avg_volume                29964.0
+Name: 75, dtype: object
+date          2024-07-30 10:51:42
+open                        479.2
+high                       490.15
+low                        475.05
+close                      476.65
+volume                       9900
+oi                          95835
+RSI_14                  45.501002
+avg_volume                23823.0
+Name: 75, dtype: object
+BANKNIFTY 51629.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:52:43
+open                       542.35
+high                        559.0
+low                         528.0
+close                      545.95
+volume                      10860
+oi                         119700
+RSI_14                  54.943875
+avg_volume               30248.25
+Name: 75, dtype: object
+date          2024-07-30 10:52:43
+open                        479.2
+high                       490.15
+low                         465.2
+close                       474.4
+volume                      14535
+oi                          99540
+RSI_14                  45.211079
+avg_volume               24054.75
+Name: 75, dtype: object
+BANKNIFTY 51625.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:53:43
+open                       542.35
+high                        559.0
+low                         528.0
+close                      550.85
+volume                      11895
+oi                         119700
+RSI_14                  55.621075
+avg_volume                30300.0
+Name: 75, dtype: object
+date          2024-07-30 10:53:48
+open                        479.2
+high                       490.15
+low                         465.2
+close                       470.7
+volume                      16545
+oi                          99540
+RSI_14                  44.742267
+avg_volume               24155.25
+Name: 75, dtype: object
+BANKNIFTY 51641.1
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:54:50
+open                       542.35
+high                        559.0
+low                         528.0
+close                      554.25
+volume                      15300
+oi                         119700
+RSI_14                  56.079129
+avg_volume               30470.25
+Name: 75, dtype: object
+date          2024-07-30 10:54:51
+open                        479.2
+high                       490.15
+low                         465.2
+close                      468.35
+volume                      18990
+oi                         102435
+RSI_14                  44.449523
+avg_volume                24277.5
+Name: 75, dtype: object
+BANKNIFTY 51663.45
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:55:53
+open                        554.4
+high                        563.8
+low                         548.0
+close                      558.25
+volume                       6645
+oi                         119700
+RSI_14                  56.646066
+avg_volume               29567.25
+Name: 76, dtype: object
+date          2024-07-30 10:55:50
+open                       467.25
+high                       470.85
+low                        459.65
+close                      462.25
+volume                       2370
+oi                         102435
+RSI_14                  43.681916
+avg_volume                23458.5
+Name: 76, dtype: object
+BANKNIFTY 51667.2
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:56:56
+open                        554.4
+high                        568.8
+low                         548.0
+close                       568.2
+volume                      12375
+oi                         119700
+RSI_14                  57.994809
+avg_volume               29853.75
+Name: 76, dtype: object
+date          2024-07-30 10:56:58
+open                       467.25
+high                       470.85
+low                        453.05
+close                      453.25
+volume                       6765
+oi                         102435
+RSI_14                  42.553426
+avg_volume               23678.25
+Name: 76, dtype: object
+BANKNIFTY 51683.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:58:00
+open                        554.4
+high                        573.7
+low                         548.0
+close                       569.4
+volume                      23820
+oi                         118515
+RSI_14                  58.151822
+avg_volume                30426.0
+Name: 76, dtype: object
+date          2024-07-30 10:58:01
+open                       467.25
+high                       470.85
+low                        448.15
+close                       450.6
+volume                      15345
+oi                         105840
+RSI_14                  42.232176
+avg_volume               24107.25
+Name: 76, dtype: object
+BANKNIFTY 51700.85
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 10:59:03
+open                        499.5
+high                       525.75
+low                         495.0
+close                       524.1
+volume                      34860
+oi                         137235
+RSI_14                  59.278883
+avg_volume                27417.0
+Name: 76, dtype: object
+date          2024-07-30 10:59:04
+open                        513.8
+high                       520.95
+low                         485.0
+close                       485.0
+volume                      24600
+oi                          76455
+RSI_14                  40.844884
+avg_volume               10325.25
+Name: 76, dtype: object
+BANKNIFTY 51689.85
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:00:06
+open                        581.0
+high                        581.0
+low                         573.3
+close                       573.3
+volume                       1920
+oi                         118515
+RSI_14                  58.287917
+avg_volume                29815.5
+Name: 77, dtype: object
+date          2024-07-30 11:00:06
+open                        438.7
+high                       443.15
+low                         438.7
+close                      443.15
+volume                        825
+oi                         105840
+RSI_14                  41.626991
+avg_volume               23090.25
+Name: 77, dtype: object
+BANKNIFTY 51687.1
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:01:09
+open                        581.0
+high                        581.0
+low                         566.4
+close                      567.95
+volume                       7965
+oi                         114615
+RSI_14                  57.307192
+avg_volume               30117.75
+Name: 77, dtype: object
+date          2024-07-30 11:01:10
+open                        438.7
+high                        453.0
+low                         438.7
+close                       452.6
+volume                       2400
+oi                         108855
+RSI_14                   43.19772
+avg_volume                23169.0
+Name: 77, dtype: object
+BANKNIFTY 51678.15
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:02:11
+open                        581.0
+high                        581.0
+low                        556.55
+close                       560.5
+volume                      14370
+oi                         114615
+RSI_14                  55.995227
+avg_volume                30438.0
+Name: 77, dtype: object
+date          2024-07-30 11:02:13
+open                        438.7
+high                       458.55
+low                         438.7
+close                      456.45
+volume                       6690
+oi                         108855
+RSI_14                  43.813675
+avg_volume                23383.5
+Name: 77, dtype: object
+BANKNIFTY 51676.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:03:15
+open                        581.0
+high                        581.0
+low                         546.0
+close                       557.8
+volume                      17370
+oi                         114615
+RSI_14                  55.534458
+avg_volume                30588.0
+Name: 77, dtype: object
+date          2024-07-30 11:03:16
+open                        438.7
+high                        465.0
+low                         438.7
+close                       456.3
+volume                      10245
+oi                         108855
+RSI_14                  43.789927
+avg_volume               23561.25
+Name: 77, dtype: object
+BANKNIFTY 51678.45
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:04:14
+open                        581.0
+high                        581.0
+low                         546.0
+close                      560.65
+volume                      19335
+oi                         115920
+RSI_14                   56.02105
+avg_volume               30686.25
+Name: 77, dtype: object
+date          2024-07-30 11:04:08
+open                        438.7
+high                        465.0
+low                         438.7
+close                      455.95
+volume                      12285
+oi                         109935
+RSI_14                  43.734436
+avg_volume               23663.25
+Name: 77, dtype: object
+BANKNIFTY 51673.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:05:15
+open                       554.55
+high                       554.65
+low                         550.9
+close                      554.25
+volume                        375
+oi                         115920
+RSI_14                  54.938774
+avg_volume                29122.5
+Name: 78, dtype: object
+date          2024-07-30 11:05:23
+open                       460.15
+high                       461.85
+low                         455.0
+close                       455.0
+volume                        165
+oi                         109935
+RSI_14                  43.696998
+avg_volume               22467.75
+Name: 78, dtype: object
+BANKNIFTY 51672.4
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:06:23
+open                       554.55
+high                       562.45
+low                         550.9
+close                      554.75
+volume                       2175
+oi                         115920
+RSI_14                  55.015062
+avg_volume                29212.5
+Name: 78, dtype: object
+date          2024-07-30 11:06:05
+open                       460.15
+high                       461.85
+low                         453.0
+close                       458.7
+volume                        420
+oi                         109935
+RSI_14                  44.182486
+avg_volume                22480.5
+Name: 78, dtype: object
+BANKNIFTY 51643.0
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:07:27
+open                       554.55
+high                       562.45
+low                        520.85
+close                       543.0
+volume                       8760
+oi                         114285
+RSI_14                  53.002709
+avg_volume               29541.75
+Name: 78, dtype: object
+date          2024-07-30 11:07:21
+open                       460.15
+high                       485.85
+low                         453.0
+close                      473.55
+volume                       5415
+oi                         110175
+RSI_14                  46.552338
+avg_volume               22730.25
+Name: 78, dtype: object
+BANKNIFTY 51654.0
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:08:31
+open                       554.55
+high                       562.45
+low                        520.85
+close                       541.7
+volume                      10290
+oi                         114285
+RSI_14                  52.787745
+avg_volume               29618.25
+Name: 78, dtype: object
+date          2024-07-30 11:08:32
+open                       460.15
+high                       485.85
+low                         453.0
+close                      469.25
+volume                       7470
+oi                         110175
+RSI_14                  45.880872
+avg_volume                22833.0
+Name: 78, dtype: object
+BANKNIFTY 51636.8
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:09:33
+open                       554.55
+high                       562.45
+low                        520.85
+close                       540.1
+volume                      14415
+oi                         114285
+RSI_14                  52.525556
+avg_volume                29824.5
+Name: 78, dtype: object
+date          2024-07-30 11:09:30
+open                       460.15
+high                       485.85
+low                         453.0
+close                      470.75
+volume                      10110
+oi                         110175
+RSI_14                  46.117012
+avg_volume                22965.0
+Name: 78, dtype: object
+BANKNIFTY 51660.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:10:37
+open                        543.6
+high                        550.0
+low                        538.85
+close                       548.9
+volume                       2265
+oi                         116010
+RSI_14                  53.909356
+avg_volume                28551.0
+Name: 79, dtype: object
+date          2024-07-30 11:10:33
+open                        470.6
+high                        472.0
+low                        462.85
+close                      462.85
+volume                       1905
+oi                         109365
+RSI_14                  44.982744
+avg_volume                22087.5
+Name: 79, dtype: object
+BANKNIFTY 51666.0
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:11:40
+open                        543.6
+high                        558.2
+low                        538.85
+close                       558.2
+volume                       6495
+oi                         116010
+RSI_14                  55.278053
+avg_volume                28762.5
+Name: 79, dtype: object
+date          2024-07-30 11:11:41
+open                        470.6
+high                        472.0
+low                         457.0
+close                      457.25
+volume                       3885
+oi                         109365
+RSI_14                  44.220778
+avg_volume                22186.5
+Name: 79, dtype: object
+BANKNIFTY 51660.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:12:41
+open                        543.6
+high                        558.2
+low                        538.85
+close                      552.65
+volume                       8295
+oi                         116010
+RSI_14                  54.471207
+avg_volume                28852.5
+Name: 79, dtype: object
+date          2024-07-30 11:12:44
+open                        470.6
+high                        472.0
+low                         457.0
+close                       460.1
+volume                       6045
+oi                         109365
+RSI_14                   44.60531
+avg_volume                22294.5
+Name: 79, dtype: object
+BANKNIFTY 51666.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:13:42
+open                        543.6
+high                       559.75
+low                        538.85
+close                      557.45
+volume                      10560
+oi                         116955
+RSI_14                  55.170695
+avg_volume               28965.75
+Name: 79, dtype: object
+date          2024-07-30 11:13:41
+open                        470.6
+high                        472.0
+low                         455.2
+close                       455.2
+volume                       8175
+oi                         110685
+RSI_14                  43.948259
+avg_volume                22401.0
+Name: 79, dtype: object
+BANKNIFTY 51647.9
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:14:49
+open                        543.6
+high                        563.0
+low                        538.85
+close                       544.1
+volume                      14580
+oi                         116955
+RSI_14                  53.169627
+avg_volume               29166.75
+Name: 79, dtype: object
+date          2024-07-30 11:14:43
+open                        470.6
+high                        472.0
+low                        450.35
+close                      468.45
+volume                      10050
+oi                         110685
+RSI_14                  45.771429
+avg_volume               22494.75
+Name: 79, dtype: object
+BANKNIFTY 51652.85
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:15:50
+open                        545.2
+high                        548.7
+low                         541.8
+close                       545.0
+volume                       1395
+oi                         116955
+RSI_14                  53.253573
+avg_volume                27925.5
+Name: 80, dtype: object
+date          2024-07-30 11:15:54
+open                        465.0
+high                        469.4
+low                         463.4
+close                       467.5
+volume                        915
+oi                         111570
+RSI_14                  45.675734
+avg_volume                21552.0
+Name: 80, dtype: object
+BANKNIFTY 51656.3
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:16:55
+open                        545.2
+high                       552.05
+low                        540.95
+close                      552.05
+volume                       3075
+oi                         116460
+RSI_14                  54.444437
+avg_volume                28009.5
+Name: 80, dtype: object
+date          2024-07-30 11:16:56
+open                        465.0
+high                        469.4
+low                         460.7
+close                       462.0
+volume                       2715
+oi                         111570
+RSI_14                  44.817792
+avg_volume                21642.0
+Name: 80, dtype: object
+BANKNIFTY 51678.85
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:17:59
+open                        545.2
+high                       567.95
+low                        540.95
+close                      567.85
+volume                       8610
+oi                         116460
+RSI_14                  56.833465
+avg_volume               28286.25
+Name: 80, dtype: object
+date          2024-07-30 11:17:59
+open                        465.0
+high                        469.4
+low                         444.0
+close                      445.55
+volume                       7200
+oi                         111570
+RSI_14                  42.509139
+avg_volume               21866.25
+Name: 80, dtype: object
+BANKNIFTY 51685.35
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:19:02
+open                        545.2
+high                       571.35
+low                        540.95
+close                      567.85
+volume                      11550
+oi                         115590
+RSI_14                  56.833465
+avg_volume               28433.25
+Name: 80, dtype: object
+date          2024-07-30 11:19:02
+open                        465.0
+high                        469.4
+low                         441.3
+close                       445.6
+volume                      11715
+oi                         115650
+RSI_14                  42.515796
+avg_volume                22092.0
+Name: 80, dtype: object
+BANKNIFTY 51668.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:20:04
+open                        561.2
+high                        561.2
+low                        556.85
+close                      556.85
+volume                        870
+oi                         115590
+RSI_14                  54.877541
+avg_volume               27144.75
+Name: 81, dtype: object
+date          2024-07-30 11:20:04
+open                       453.05
+high                       454.95
+low                        453.05
+close                       454.2
+volume                        180
+oi                         115650
+RSI_14                  44.007271
+avg_volume                21144.0
+Name: 81, dtype: object
+BANKNIFTY 51667.8
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:21:08
+open                        561.2
+high                        569.0
+low                         556.0
+close                       556.0
+volume                       3330
+oi                         115590
+RSI_14                  54.712846
+avg_volume               27267.75
+Name: 81, dtype: object
+date          2024-07-30 11:21:02
+open                       453.05
+high                        455.0
+low                         445.1
+close                       455.0
+volume                       1650
+oi                         115650
+RSI_14                  44.156152
+avg_volume                21217.5
+Name: 81, dtype: object
+BANKNIFTY 51668.8
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:22:11
+open                        561.2
+high                        569.0
+low                        549.05
+close                      551.75
+volume                       4290
+oi                         116865
+RSI_14                  53.903977
+avg_volume               27315.75
+Name: 81, dtype: object
+date          2024-07-30 11:22:09
+open                       453.05
+high                        460.8
+low                         445.1
+close                       459.4
+volume                       2805
+oi                         115905
+RSI_14                   44.96105
+avg_volume               21275.25
+Name: 81, dtype: object
+BANKNIFTY 51682.35
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:23:14
+open                        561.2
+high                        571.9
+low                        549.05
+close                      568.65
+volume                      10050
+oi                         116865
+RSI_14                  57.004166
+avg_volume               27603.75
+Name: 81, dtype: object
+date          2024-07-30 11:23:14
+open                       453.05
+high                        460.8
+low                         444.2
+close                      444.95
+volume                       3555
+oi                         115905
+RSI_14                  42.396292
+avg_volume               21312.75
+Name: 81, dtype: object
+BANKNIFTY 51661.0
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:24:18
+open                        561.2
+high                        571.9
+low                        549.05
+close                       555.0
+volume                      13200
+oi                         116865
+RSI_14                  54.520347
+avg_volume               27761.25
+Name: 81, dtype: object
+date          2024-07-30 11:24:18
+open                       453.05
+high                        460.8
+low                         444.2
+close                       455.0
+volume                       4650
+oi                         115905
+RSI_14                  44.156152
+avg_volume                21367.5
+Name: 81, dtype: object
+BANKNIFTY 51671.25
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:25:21
+open                        553.6
+high                        557.9
+low                         553.6
+close                       557.9
+volume                        375
+oi                         117780
+RSI_14                  54.974028
+avg_volume               25701.75
+Name: 82, dtype: object
+date          2024-07-30 11:25:22
+open                        457.3
+high                        457.3
+low                         455.0
+close                       455.0
+volume                        510
+oi                         116265
+RSI_14                  44.206489
+avg_volume               19304.25
+Name: 82, dtype: object
+BANKNIFTY 51675.4
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:26:20
+open                        553.6
+high                        565.0
+low                         553.6
+close                       565.0
+volume                       1290
+oi                         117780
+RSI_14                  56.126481
+avg_volume                25747.5
+Name: 82, dtype: object
+date          2024-07-30 11:26:23
+open                        457.3
+high                        457.3
+low                         449.0
+close                      450.55
+volume                       1260
+oi                         116265
+RSI_14                   43.52201
+avg_volume               19341.75
+Name: 82, dtype: object
+BANKNIFTY 51690.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:27:26
+open                        553.6
+high                        572.0
+low                         553.6
+close                      570.45
+volume                       6615
+oi                         117780
+RSI_14                  56.971858
+avg_volume               26013.75
+Name: 82, dtype: object
+date          2024-07-30 11:27:20
+open                        457.3
+high                        457.3
+low                        442.55
+close                       443.3
+volume                       3165
+oi                         116265
+RSI_14                  42.451128
+avg_volume                19437.0
+Name: 82, dtype: object
+BANKNIFTY 51688.3
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:28:30
+open                        553.6
+high                        575.6
+low                         553.6
+close                       571.0
+volume                       9675
+oi                         116460
+RSI_14                  57.055365
+avg_volume               26166.75
+Name: 82, dtype: object
+date          2024-07-30 11:28:32
+open                        457.3
+high                        457.3
+low                         440.0
+close                      442.75
+volume                       6840
+oi                         117360
+RSI_14                  42.372036
+avg_volume               19620.75
+Name: 82, dtype: object
+BANKNIFTY 51693.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:29:34
+open                        553.6
+high                       579.35
+low                         553.6
+close                      570.25
+volume                      13155
+oi                         116460
+RSI_14                  56.941411
+avg_volume               26340.75
+Name: 82, dtype: object
+date          2024-07-30 11:29:33
+open                        457.3
+high                        457.3
+low                         437.0
+close                      442.75
+volume                      12195
+oi                         117360
+RSI_14                  42.372036
+avg_volume                19888.5
+Name: 82, dtype: object
+BANKNIFTY 51685.4
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:30:36
+open                        565.6
+high                        572.1
+low                         565.6
+close                       570.8
+volume                        600
+oi                         116460
+RSI_14                  57.064106
+avg_volume                25552.5
+Name: 83, dtype: object
+date          2024-07-30 11:30:38
+open                        444.3
+high                       447.75
+low                        441.75
+close                      443.35
+volume                        435
+oi                         117360
+RSI_14                  42.406844
+avg_volume                19167.0
+Name: 83, dtype: object
+BANKNIFTY 51706.5
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:31:40
+open                       511.45
+high                        525.9
+low                        510.45
+close                       520.9
+volume                       7425
+oi                         145875
+RSI_14                  57.830601
+avg_volume               23711.25
+Name: 83, dtype: object
+date          2024-07-30 11:31:39
+open                       493.35
+high                       493.35
+low                        478.55
+close                       480.0
+volume                       6045
+oi                          99315
+RSI_14                  40.990933
+avg_volume               13869.75
+Name: 83, dtype: object
+BANKNIFTY 51710.2
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:32:44
+open                       511.45
+high                        531.7
+low                        510.45
+close                       520.0
+volume                      22725
+oi                         145875
+RSI_14                  57.676211
+avg_volume               24476.25
+Name: 83, dtype: object
+date          2024-07-30 11:32:44
+open                       493.35
+high                       493.35
+low                         466.5
+close                       478.0
+volume                      24435
+oi                          99315
+RSI_14                  40.716498
+avg_volume               14789.25
+Name: 83, dtype: object
+BANKNIFTY 51754.15
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:33:48
+open                       511.45
+high                        550.0
+low                        510.45
+close                       545.7
+volume                      52200
+oi                         145875
+RSI_14                  61.682228
+avg_volume                25950.0
+Name: 83, dtype: object
+date          2024-07-30 11:33:50
+open                       493.35
+high                       493.35
+low                         450.3
+close                       455.5
+volume                      37680
+oi                          99315
+RSI_14                  37.864572
+avg_volume                15451.5
+Name: 83, dtype: object
+BANKNIFTY 51747.45
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:34:52
+open                       511.45
+high                       550.55
+low                        510.45
+close                       538.2
+volume                      69360
+oi                         139170
+RSI_14                  60.593745
+avg_volume                26808.0
+Name: 83, dtype: object
+date          2024-07-30 11:34:54
+open                       493.35
+high                       493.35
+low                        449.45
+close                       463.0
+volume                      45405
+oi                         108105
+RSI_14                  38.769762
+avg_volume               15837.75
+Name: 83, dtype: object
+BANKNIFTY 51750.3
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:35:55
+open                       542.65
+high                       544.65
+low                        535.25
+close                       540.2
+volume                       5280
+oi                         139170
+RSI_14                  60.894531
+avg_volume               26529.75
+Name: 84, dtype: object
+date          2024-07-30 11:35:57
+open                       458.95
+high                        461.9
+low                        456.75
+close                       459.3
+volume                       7740
+oi                         108105
+RSI_14                  38.306716
+avg_volume               16032.75
+Name: 84, dtype: object
+BANKNIFTY 51768.1
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:37:00
+open                       542.65
+high                       558.05
+low                        535.25
+close                      552.95
+volume                      21315
+oi                         138555
+RSI_14                  62.813688
+avg_volume                27331.5
+Name: 84, dtype: object
+date          2024-07-30 11:37:01
+open                       458.95
+high                        461.9
+low                        446.05
+close                      448.65
+volume                      16410
+oi                         110730
+RSI_14                  36.971271
+avg_volume               16466.25
+Name: 84, dtype: object
+BANKNIFTY 51765.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:38:02
+open                       542.65
+high                        558.4
+low                        535.25
+close                      551.95
+volume                      30390
+oi                         138555
+RSI_14                      62.67
+avg_volume               27785.25
+Name: 84, dtype: object
+date          2024-07-30 11:38:06
+open                       458.95
+high                        461.9
+low                         442.0
+close                      446.35
+volume                      19395
+oi                         110730
+RSI_14                     36.695
+avg_volume                16615.5
+Name: 84, dtype: object
+BANKNIFTY 51756.75
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:39:08
+open                       542.65
+high                        558.4
+low                        535.25
+close                      543.75
+volume                      37815
+oi                         138555
+RSI_14                  61.448502
+avg_volume                28156.5
+Name: 84, dtype: object
+date          2024-07-30 11:39:09
+open                       458.95
+high                        461.9
+low                         442.0
+close                      455.35
+volume                      22995
+oi                         110730
+RSI_14                  37.800304
+avg_volume                16795.5
+Name: 84, dtype: object
+BANKNIFTY 51746.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:40:12
+open                       537.45
+high                        538.9
+low                         534.2
+close                       537.9
+volume                       1515
+oi                         137715
+RSI_14                  60.363295
+avg_volume               27882.75
+Name: 85, dtype: object
+date          2024-07-30 11:40:13
+open                       458.95
+high                        463.2
+low                         458.0
+close                       458.0
+volume                       1890
+oi                         112620
+RSI_14                  38.148168
+avg_volume                16833.0
+Name: 85, dtype: object
+BANKNIFTY 51757.8
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:41:16
+open                       537.45
+high                       544.95
+low                         534.2
+close                      540.15
+volume                       5760
+oi                         137715
+RSI_14                  60.759811
+avg_volume                28095.0
+Name: 85, dtype: object
+date          2024-07-30 11:41:17
+open                       458.95
+high                        463.2
+low                         454.4
+close                      458.15
+volume                       4620
+oi                         112620
+RSI_14                  38.181865
+avg_volume                16969.5
+Name: 85, dtype: object
+BANKNIFTY 51763.15
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:42:20
+open                       537.45
+high                        549.0
+low                         534.2
+close                      541.15
+volume                       8805
+oi                         137715
+RSI_14                  60.927679
+avg_volume               28247.25
+Name: 85, dtype: object
+date          2024-07-30 11:42:17
+open                       458.95
+high                        463.2
+low                        453.45
+close                       458.6
+volume                       6075
+oi                         112620
+RSI_14                  38.282735
+avg_volume               17042.25
+Name: 85, dtype: object
+BANKNIFTY 51744.8
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:43:23
+open                       537.45
+high                        549.0
+low                        531.95
+close                      533.45
+volume                      14220
+oi                         138270
+RSI_14                   59.22149
+avg_volume                28518.0
+Name: 85, dtype: object
+date          2024-07-30 11:43:24
+open                       458.95
+high                       468.25
+low                        453.45
+close                      467.25
+volume                       8355
+oi                         113790
+RSI_14                  40.159655
+avg_volume               17156.25
+Name: 85, dtype: object
+BANKNIFTY 51746.5
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:44:19
+open                       537.45
+high                        549.0
+low                         530.0
+close                       537.5
+volume                      16590
+oi                         138270
+RSI_14                  60.258863
+avg_volume                28636.5
+Name: 85, dtype: object
+date          2024-07-30 11:44:28
+open                       458.95
+high                        468.8
+low                        453.45
+close                      462.45
+volume                      10200
+oi                         113790
+RSI_14                  39.132467
+avg_volume                17248.5
+Name: 85, dtype: object
+BANKNIFTY 51750.25
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:45:31
+open                        541.0
+high                        542.3
+low                         537.3
+close                       537.9
+volume                       5745
+oi                         138270
+RSI_14                   59.89011
+avg_volume               27977.25
+Name: 86, dtype: object
+date          2024-07-30 11:45:31
+open                       461.15
+high                        466.3
+low                         460.0
+close                       466.3
+volume                       3525
+oi                         113790
+RSI_14                  40.016087
+avg_volume               16800.75
+Name: 86, dtype: object
+BANKNIFTY 51753.2
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:46:32
+open                        541.0
+high                        542.3
+low                         531.7
+close                       538.6
+volume                       8550
+oi                         142035
+RSI_14                  60.078772
+avg_volume                28117.5
+Name: 86, dtype: object
+date          2024-07-30 11:46:35
+open                       461.15
+high                        471.3
+low                         460.0
+close                       465.0
+volume                      16485
+oi                         120810
+RSI_14                  39.718664
+avg_volume               17448.75
+Name: 86, dtype: object
+BANKNIFTY 51743.4
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:47:38
+open                        541.0
+high                        542.3
+low                        519.65
+close                       529.6
+volume                      15600
+oi                         142035
+RSI_14                  57.740196
+avg_volume                28470.0
+Name: 86, dtype: object
+date          2024-07-30 11:47:40
+open                       461.15
+high                        479.0
+low                         460.0
+close                      469.55
+volume                      23115
+oi                         120810
+RSI_14                  40.746961
+avg_volume               17780.25
+Name: 86, dtype: object
+BANKNIFTY 51739.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:48:42
+open                        541.0
+high                        542.3
+low                        519.65
+close                      525.45
+volume                      21735
+oi                         142035
+RSI_14                    56.7221
+avg_volume               28776.75
+Name: 86, dtype: object
+date          2024-07-30 11:48:43
+open                       461.15
+high                        479.0
+low                         460.0
+close                       475.7
+volume                      26535
+oi                         120810
+RSI_14                  42.082357
+avg_volume               17951.25
+Name: 86, dtype: object
+BANKNIFTY 51732.75
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:49:45
+open                        541.0
+high                        542.3
+low                        519.65
+close                      525.45
+volume                      24885
+oi                         140700
+RSI_14                    56.7221
+avg_volume               28934.25
+Name: 86, dtype: object
+date          2024-07-30 11:49:48
+open                       461.15
+high                        479.0
+low                         460.0
+close                       473.5
+volume                      31365
+oi                         118275
+RSI_14                  41.611625
+avg_volume               18192.75
+Name: 86, dtype: object
+BANKNIFTY 51742.8
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:50:51
+open                        528.1
+high                       543.45
+low                         526.2
+close                       537.6
+volume                       4395
+oi                         140700
+RSI_14                  59.188412
+avg_volume               27954.75
+Name: 87, dtype: object
+date          2024-07-30 11:50:50
+open                       472.25
+high                       476.35
+low                        459.85
+close                      465.55
+volume                       4545
+oi                         118275
+RSI_14                   40.36477
+avg_volume                18088.5
+Name: 87, dtype: object
+BANKNIFTY 51714.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:51:55
+open                        528.1
+high                       543.45
+low                         515.0
+close                      516.35
+volume                       8640
+oi                         140700
+RSI_14                  54.402661
+avg_volume                28167.0
+Name: 87, dtype: object
+date          2024-07-30 11:51:56
+open                       472.25
+high                        485.4
+low                        459.85
+close                      485.35
+volume                      11205
+oi                         118275
+RSI_14                  44.232886
+avg_volume                18421.5
+Name: 87, dtype: object
+BANKNIFTY 51733.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:52:58
+open                        528.1
+high                       543.45
+low                        506.95
+close                      523.15
+volume                      17445
+oi                         143880
+RSI_14                  56.076066
+avg_volume               28607.25
+Name: 87, dtype: object
+date          2024-07-30 11:53:00
+open                       472.25
+high                        493.9
+low                        459.85
+close                      475.95
+volume                      21540
+oi                         116460
+RSI_14                   42.16713
+avg_volume               18938.25
+Name: 87, dtype: object
+BANKNIFTY 51717.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:54:02
+open                        528.1
+high                       543.45
+low                        506.95
+close                      516.25
+volume                      19290
+oi                         143880
+RSI_14                  54.378797
+avg_volume                28699.5
+Name: 87, dtype: object
+date          2024-07-30 11:54:00
+open                       472.25
+high                        493.9
+low                        459.85
+close                       486.0
+volume                      26865
+oi                         116460
+RSI_14                  44.370289
+avg_volume                19204.5
+Name: 87, dtype: object
+BANKNIFTY 51720.4
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:54:59
+open                        528.1
+high                       543.45
+low                        506.95
+close                       513.2
+volume                      20985
+oi                         145200
+RSI_14                  53.660868
+avg_volume               28784.25
+Name: 87, dtype: object
+date          2024-07-30 11:55:07
+open                        483.0
+high                       483.05
+low                         482.9
+close                       482.9
+volume                         45
+oi                         114960
+RSI_14                  43.798907
+avg_volume                19434.0
+Name: 88, dtype: object
+BANKNIFTY 51724.25
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:56:08
+open                        513.0
+high                        519.2
+low                         509.0
+close                       519.2
+volume                       1710
+oi                         145200
+RSI_14                  54.921696
+avg_volume               27842.25
+Name: 88, dtype: object
+date          2024-07-30 11:56:12
+open                        483.0
+high                        489.0
+low                         478.0
+close                       481.7
+volume                       3330
+oi                         114960
+RSI_14                  43.587237
+avg_volume               19598.25
+Name: 88, dtype: object
+BANKNIFTY 51733.75
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:57:15
+open                        513.0
+high                        527.6
+low                         509.0
+close                      525.05
+volume                       4845
+oi                         145200
+RSI_14                   56.08665
+avg_volume                27999.0
+Name: 88, dtype: object
+date          2024-07-30 11:57:14
+open                        483.0
+high                        489.0
+low                         475.0
+close                       478.1
+volume                       5340
+oi                         114960
+RSI_14                  42.964325
+avg_volume               19698.75
+Name: 88, dtype: object
+BANKNIFTY 51736.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:58:16
+open                        513.0
+high                       529.65
+low                         509.0
+close                      526.25
+volume                       8520
+oi                         146085
+RSI_14                  56.318212
+avg_volume               28182.75
+Name: 88, dtype: object
+date          2024-07-30 11:58:17
+open                        483.0
+high                        489.0
+low                         472.3
+close                      475.95
+volume                       7830
+oi                         116340
+RSI_14                  42.600729
+avg_volume               19823.25
+Name: 88, dtype: object
+BANKNIFTY 51706.2
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 11:59:22
+open                        513.0
+high                       529.65
+low                         497.4
+close                       518.3
+volume                      17775
+oi                         146085
+RSI_14                  54.736963
+avg_volume                28645.5
+Name: 88, dtype: object
+date          2024-07-30 11:59:23
+open                        483.0
+high                       500.65
+low                         472.3
+close                      483.95
+volume                      18120
+oi                         116340
+RSI_14                  43.985813
+avg_volume               20337.75
+Name: 88, dtype: object
+BANKNIFTY 51705.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:00:26
+open                        515.0
+high                       515.55
+low                        507.95
+close                       508.0
+volume                       3900
+oi                         146085
+RSI_14                  52.243519
+avg_volume               27716.25
+Name: 89, dtype: object
+date          2024-07-30 12:00:27
+open                       489.35
+high                        494.4
+low                        489.35
+close                      494.15
+volume                       1950
+oi                         116340
+RSI_14                  46.268663
+avg_volume                20299.5
+Name: 89, dtype: object
+BANKNIFTY 51662.15
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:01:32
+open                        565.0
+high                        565.5
+low                        536.25
+close                      548.75
+volume                       4650
+oi                         105735
+RSI_14                  49.506956
+avg_volume                24021.0
+Name: 89, dtype: object
+date          2024-07-30 12:01:33
+open                       443.85
+high                        465.5
+low                        443.85
+close                       456.2
+volume                       8430
+oi                         121995
+RSI_14                  48.157495
+avg_volume               18273.75
+Name: 89, dtype: object
+BANKNIFTY 51682.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:02:35
+open                        565.0
+high                        565.5
+low                        536.25
+close                       547.9
+volume                       8520
+oi                         105735
+RSI_14                  49.326935
+avg_volume                24214.5
+Name: 89, dtype: object
+date          2024-07-30 12:02:34
+open                       443.85
+high                        465.5
+low                        443.85
+close                      455.45
+volume                      12585
+oi                         121995
+RSI_14                   47.98742
+avg_volume                18481.5
+Name: 89, dtype: object
+BANKNIFTY 51684.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:03:40
+open                        565.0
+high                        565.5
+low                        536.25
+close                       556.0
+volume                       9810
+oi                         105735
+RSI_14                  51.097546
+avg_volume                24279.0
+Name: 89, dtype: object
+date          2024-07-30 12:03:41
+open                       443.85
+high                        465.5
+low                        443.85
+close                       447.0
+volume                      14745
+oi                         121995
+RSI_14                   45.99117
+avg_volume                18589.5
+Name: 89, dtype: object
+BANKNIFTY 51691.85
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:04:45
+open                        565.0
+high                        565.5
+low                        536.25
+close                      557.65
+volume                      12660
+oi                         107655
+RSI_14                  51.473925
+avg_volume                24421.5
+Name: 89, dtype: object
+date          2024-07-30 12:04:36
+open                       443.85
+high                        465.5
+low                        442.25
+close                       443.7
+volume                      16230
+oi                         120135
+RSI_14                   45.16933
+avg_volume               18663.75
+Name: 89, dtype: object
+BANKNIFTY 51694.95
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:05:47
+open                       553.65
+high                       558.85
+low                        551.85
+close                      558.85
+volume                        330
+oi                         107655
+RSI_14                  51.753718
+avg_volume               22253.25
+Name: 90, dtype: object
+date          2024-07-30 12:05:50
+open                        449.0
+high                        451.1
+low                         446.3
+close                       446.3
+volume                        615
+oi                         120135
+RSI_14                  45.850435
+avg_volume                17343.0
+Name: 90, dtype: object
+BANKNIFTY 51717.85
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:06:52
+open                        502.3
+high                        516.9
+low                        498.35
+close                      515.55
+volume                       7650
+oi                         148590
+RSI_14                  53.915012
+avg_volume                27036.0
+Name: 90, dtype: object
+date          2024-07-30 12:06:53
+open                        493.1
+high                       495.55
+low                         480.7
+close                       482.0
+volume                       6690
+oi                         114270
+RSI_14                  43.763719
+avg_volume                21315.0
+Name: 90, dtype: object
+BANKNIFTY 51687.45
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:07:55
+open                       553.65
+high                       572.55
+low                        551.75
+close                      551.75
+volume                       8865
+oi                         109335
+RSI_14                  50.080912
+avg_volume                22680.0
+Name: 90, dtype: object
+date          2024-07-30 12:07:56
+open                        449.0
+high                       453.55
+low                         434.2
+close                      453.55
+volume                       7140
+oi                         120390
+RSI_14                  47.654537
+avg_volume               17669.25
+Name: 90, dtype: object
+BANKNIFTY 51667.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:09:01
+open                       553.65
+high                       572.55
+low                         542.0
+close                      549.15
+volume                      10560
+oi                         109335
+RSI_14                  49.479175
+avg_volume               22764.75
+Name: 90, dtype: object
+date          2024-07-30 12:09:01
+open                        449.0
+high                        463.0
+low                         434.2
+close                       456.0
+volume                      12420
+oi                         120390
+RSI_14                  48.255543
+avg_volume               17933.25
+Name: 90, dtype: object
+BANKNIFTY 51685.95
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:10:03
+open                        560.0
+high                        560.0
+low                         560.0
+close                       560.0
+volume                         30
+oi                         109590
+RSI_14                  51.987513
+avg_volume               21059.25
+Name: 91, dtype: object
+date          2024-07-30 12:10:03
+open                        447.3
+high                        447.3
+low                         447.3
+close                       447.3
+volume                         45
+oi                         120945
+RSI_14                  46.229652
+avg_volume               16118.25
+Name: 91, dtype: object
+BANKNIFTY 51688.75
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:11:06
+open                        560.0
+high                       563.75
+low                        557.55
+close                       562.0
+volume                       1440
+oi                         109590
+RSI_14                  52.481192
+avg_volume               21129.75
+Name: 91, dtype: object
+date          2024-07-30 12:11:10
+open                        447.3
+high                        448.2
+low                         444.6
+close                      446.55
+volume                       1170
+oi                         120945
+RSI_14                  46.023325
+avg_volume                16174.5
+Name: 91, dtype: object
+BANKNIFTY 51674.3
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:12:10
+open                        560.0
+high                       563.75
+low                        553.45
+close                       553.7
+volume                       1860
+oi                         109590
+RSI_14                  50.396407
+avg_volume               21150.75
+Name: 91, dtype: object
+date          2024-07-30 12:12:13
+open                        447.3
+high                       452.45
+low                         444.6
+close                      452.45
+volume                       3015
+oi                         120945
+RSI_14                   47.60492
+avg_volume               16266.75
+Name: 91, dtype: object
+BANKNIFTY 51669.2
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:13:15
+open                        560.0
+high                       563.75
+low                         544.9
+close                      555.05
+volume                       4695
+oi                         109635
+RSI_14                  50.729105
+avg_volume                21292.5
+Name: 91, dtype: object
+date          2024-07-30 12:13:16
+open                        447.3
+high                        457.7
+low                         444.6
+close                      450.45
+volume                       4425
+oi                         122580
+RSI_14                  47.079275
+avg_volume               16337.25
+Name: 91, dtype: object
+BANKNIFTY 51686.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:14:13
+open                        560.0
+high                       563.75
+low                         544.9
+close                      559.35
+volume                       6165
+oi                         109635
+RSI_14                  51.818718
+avg_volume                21366.0
+Name: 91, dtype: object
+date          2024-07-30 12:14:18
+open                        447.3
+high                        457.7
+low                         444.6
+close                       448.8
+volume                       5370
+oi                         122580
+RSI_14                  46.637611
+avg_volume                16384.5
+Name: 91, dtype: object
+BANKNIFTY 51691.45
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:15:22
+open                       564.05
+high                       564.05
+low                         560.7
+close                      563.15
+volume                        330
+oi                         109635
+RSI_14                  52.777931
+avg_volume               19001.25
+Name: 92, dtype: object
+date          2024-07-30 12:15:25
+open                        444.0
+high                        447.9
+low                         444.0
+close                      444.35
+volume                        705
+oi                         122580
+RSI_14                  45.442401
+avg_volume               14886.75
+Name: 92, dtype: object
+BANKNIFTY 51694.2
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:16:24
+open                       564.05
+high                        570.5
+low                         560.7
+close                       565.8
+volume                       2790
+oi                         109755
+RSI_14                  53.437711
+avg_volume               19124.25
+Name: 92, dtype: object
+date          2024-07-30 12:16:30
+open                        444.0
+high                        447.9
+low                         437.8
+close                       441.3
+volume                       2790
+oi                         122445
+RSI_14                  44.666948
+avg_volume                14991.0
+Name: 92, dtype: object
+BANKNIFTY 51702.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:17:30
+open                        507.0
+high                        519.7
+low                         505.0
+close                       517.3
+volume                       6285
+oi                         154335
+RSI_14                  54.571472
+avg_volume               25142.25
+Name: 92, dtype: object
+date          2024-07-30 12:17:28
+open                       489.55
+high                       493.65
+low                        481.85
+close                       484.0
+volume                       6225
+oi                         118815
+RSI_14                  43.984777
+avg_volume                22422.0
+Name: 92, dtype: object
+BANKNIFTY 51735.05
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:18:35
+open                        507.0
+high                        528.0
+low                         505.0
+close                      527.35
+volume                      15375
+oi                         154335
+RSI_14                  56.899821
+avg_volume               25596.75
+Name: 92, dtype: object
+date          2024-07-30 12:18:37
+open                       489.55
+high                       493.65
+low                         474.4
+close                      476.95
+volume                      12675
+oi                         118815
+RSI_14                   42.44923
+avg_volume                22744.5
+Name: 92, dtype: object
+BANKNIFTY 51720.45
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:19:39
+open                        507.0
+high                       528.65
+low                         505.0
+close                      515.15
+volume                      20325
+oi                         154680
+RSI_14                  54.040321
+avg_volume               25844.25
+Name: 92, dtype: object
+date          2024-07-30 12:19:40
+open                       489.55
+high                       493.65
+low                        473.45
+close                       484.0
+volume                      16755
+oi                         120315
+RSI_14                  43.984777
+avg_volume                22948.5
+Name: 92, dtype: object
+BANKNIFTY 51696.2
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:20:31
+open                       561.05
+high                       567.15
+low                        561.05
+close                      567.15
+volume                        675
+oi                         110520
+RSI_14                  53.806782
+avg_volume                16711.5
+Name: 93, dtype: object
+date          2024-07-30 12:20:43
+open                        443.7
+high                        447.8
+low                        443.05
+close                      446.85
+volume                        450
+oi                         121140
+RSI_14                  46.227289
+avg_volume               13445.25
+Name: 93, dtype: object
+BANKNIFTY 51697.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:21:46
+open                       561.05
+high                       568.05
+low                        548.55
+close                      566.65
+volume                       4485
+oi                         110520
+RSI_14                  53.676312
+avg_volume                16902.0
+Name: 93, dtype: object
+date          2024-07-30 12:21:44
+open                        443.7
+high                        456.1
+low                        442.75
+close                       444.4
+volume                       2370
+oi                         121140
+RSI_14                  45.479003
+avg_volume               13541.25
+Name: 93, dtype: object
+BANKNIFTY 51689.15
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:22:45
+open                       561.05
+high                        569.6
+low                        548.55
+close                       561.3
+volume                       5070
+oi                         110295
+RSI_14                  52.140451
+avg_volume               16931.25
+Name: 93, dtype: object
+date          2024-07-30 12:22:34
+open                        443.7
+high                        456.1
+low                         441.4
+close                      444.65
+volume                       3030
+oi                         121260
+RSI_14                  45.546379
+avg_volume               13574.25
+Name: 93, dtype: object
+BANKNIFTY 51696.7
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:23:38
+open                       561.05
+high                        569.6
+low                        548.55
+close                      566.95
+volume                       5490
+oi                         110295
+RSI_14                  53.754682
+avg_volume               16952.25
+Name: 93, dtype: object
+date          2024-07-30 12:23:51
+open                        443.7
+high                        456.1
+low                         441.4
+close                       445.0
+volume                       4155
+oi                         121260
+RSI_14                  45.641041
+avg_volume                13630.5
+Name: 93, dtype: object
+BANKNIFTY 51688.6
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:24:54
+open                       561.05
+high                        570.0
+low                        548.55
+close                      564.95
+volume                       7230
+oi                         110295
+RSI_14                  53.225309
+avg_volume               17039.25
+Name: 93, dtype: object
+date          2024-07-30 12:24:53
+open                        443.7
+high                        456.1
+low                         440.4
+close                       445.1
+volume                       4665
+oi                         121260
+RSI_14                  45.668159
+avg_volume                13656.0
+Name: 93, dtype: object
+BANKNIFTY 51695.1
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:25:55
+open                       565.05
+high                        567.4
+low                         563.1
+close                      567.25
+volume                        375
+oi                         110250
+RSI_14                  53.876546
+avg_volume                15555.0
+Name: 94, dtype: object
+date          2024-07-30 12:25:46
+open                       446.55
+high                       446.55
+low                        441.45
+close                       443.5
+volume                        390
+oi                         122070
+RSI_14                  45.233996
+avg_volume               12602.25
+Name: 94, dtype: object
+BANKNIFTY 51707.35
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:27:00
+open                        509.6
+high                       514.05
+low                        507.45
+close                      514.05
+volume                       2010
+oi                         156450
+RSI_14                  53.859428
+avg_volume                22540.5
+Name: 94, dtype: object
+date          2024-07-30 12:26:58
+open                        490.5
+high                        491.0
+low                         483.3
+close                      485.45
+volume                       5805
+oi                         119115
+RSI_14                  44.239917
+avg_volume                21528.0
+Name: 94, dtype: object
+BANKNIFTY 51704.7
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:28:04
+open                        509.6
+high                        519.0
+low                        507.45
+close                      514.35
+volume                       4440
+oi                         156645
+RSI_14                  53.945285
+avg_volume                22662.0
+Name: 94, dtype: object
+date          2024-07-30 12:28:06
+open                        490.5
+high                        491.0
+low                         480.0
+close                      484.25
+volume                       8205
+oi                         120765
+RSI_14                  43.925891
+avg_volume                21648.0
+Name: 94, dtype: object
+BANKNIFTY 51712.5
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:29:05
+open                        509.6
+high                        519.0
+low                        507.45
+close                       513.2
+volume                       6360
+oi                         156645
+RSI_14                  53.614418
+avg_volume                22758.0
+Name: 94, dtype: object
+date          2024-07-30 12:29:07
+open                        490.5
+high                        491.0
+low                         480.0
+close                       488.0
+volume                       9975
+oi                         120765
+RSI_14                  44.965002
+avg_volume                21736.5
+Name: 94, dtype: object
+BANKNIFTY 51701.15
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:30:08
+open                       508.25
+high                       508.25
+low                         503.3
+close                       507.5
+volume                       4620
+oi                         156645
+RSI_14                  51.773779
+avg_volume                22168.5
+Name: 95, dtype: object
+date          2024-07-30 12:30:05
+open                       487.75
+high                       489.55
+low                        487.75
+close                       489.4
+volume                         75
+oi                         120765
+RSI_14                  45.459526
+avg_volume                21054.0
+Name: 95, dtype: object
+BANKNIFTY 51709.35
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:31:14
+open                       508.25
+high                        514.0
+low                         503.3
+close                       511.0
+volume                       6795
+oi                         157830
+RSI_14                  52.896295
+avg_volume               22277.25
+Name: 95, dtype: object
+date          2024-07-30 12:31:15
+open                       487.75
+high                       489.55
+low                         482.4
+close                       485.2
+volume                       1155
+oi                         122820
+RSI_14                  44.163685
+avg_volume                21108.0
+Name: 95, dtype: object
+BANKNIFTY 51741.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:32:16
+open                       508.25
+high                       525.65
+low                         503.3
+close                       523.4
+volume                      12270
+oi                         157830
+RSI_14                  56.419735
+avg_volume                22551.0
+Name: 95, dtype: object
+date          2024-07-30 12:32:19
+open                       487.75
+high                       489.55
+low                        472.15
+close                       474.2
+volume                       4320
+oi                         122820
+RSI_14                  41.280627
+avg_volume               21266.25
+Name: 95, dtype: object
+BANKNIFTY 51735.8
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:33:19
+open                       508.25
+high                       529.95
+low                         503.3
+close                      521.75
+volume                      18750
+oi                         157830
+RSI_14                    55.9816
+avg_volume                22875.0
+Name: 95, dtype: object
+date          2024-07-30 12:33:17
+open                       487.75
+high                       489.55
+low                        465.75
+close                      473.95
+volume                       9600
+oi                         122820
+RSI_14                  41.219471
+avg_volume               21530.25
+Name: 95, dtype: object
+BANKNIFTY 51722.45
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:34:23
+open                       508.25
+high                       529.95
+low                         503.3
+close                       517.7
+volume                      22755
+oi                         156795
+RSI_14                  54.867882
+avg_volume               23075.25
+Name: 95, dtype: object
+date          2024-07-30 12:34:21
+open                       487.75
+high                       489.55
+low                        465.75
+close                       479.5
+volume                      11970
+oi                         123630
+RSI_14                   42.62122
+avg_volume               21648.75
+Name: 95, dtype: object
+BANKNIFTY 51732.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:35:26
+open                       517.15
+high                       524.95
+low                        517.15
+close                      524.95
+volume                       1215
+oi                         156795
+RSI_14                  57.004309
+avg_volume                20916.0
+Name: 96, dtype: object
+date          2024-07-30 12:35:25
+open                        479.8
+high                       480.75
+low                         478.0
+close                       478.0
+volume                       1545
+oi                         123630
+RSI_14                  42.160198
+avg_volume               20252.25
+Name: 96, dtype: object
+BANKNIFTY 51730.65
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:36:30
+open                       517.15
+high                       524.95
+low                        517.15
+close                       522.1
+volume                       4980
+oi                         156795
+RSI_14                  56.204316
+avg_volume               21104.25
+Name: 96, dtype: object
+date          2024-07-30 12:36:30
+open                        479.8
+high                       481.05
+low                         477.0
+close                      477.75
+volume                       2280
+oi                         123630
+RSI_14                  42.091511
+avg_volume                20289.0
+Name: 96, dtype: object
+BANKNIFTY 51727.9
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:37:33
+open                       517.15
+high                       524.95
+low                        517.15
+close                       519.0
+volume                       6885
+oi                         161220
+RSI_14                  55.299649
+avg_volume                21199.5
+Name: 96, dtype: object
+date          2024-07-30 12:37:31
+open                        479.8
+high                       481.05
+low                         475.5
+close                      479.55
+volume                       5610
+oi                         124965
+RSI_14                  42.591108
+avg_volume                20455.5
+Name: 96, dtype: object
+BANKNIFTY 51722.3
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:38:34
+open                       517.15
+high                       524.95
+low                         516.0
+close                      518.05
+volume                       9585
+oi                         161220
+RSI_14                  55.014883
+avg_volume                21334.5
+Name: 96, dtype: object
+date          2024-07-30 12:38:37
+open                        479.8
+high                        482.0
+low                         475.0
+close                       481.2
+volume                       7995
+oi                         124965
+RSI_14                  43.059605
+avg_volume               20574.75
+Name: 96, dtype: object
+BANKNIFTY 51729.0
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:39:39
+open                       517.15
+high                       524.95
+low                         516.0
+close                      521.65
+volume                      11340
+oi                         161220
+RSI_14                  56.075272
+avg_volume               21422.25
+Name: 96, dtype: object
+date          2024-07-30 12:39:36
+open                        479.8
+high                        482.0
+low                         475.0
+close                       479.2
+volume                      10245
+oi                         124965
+RSI_14                  42.493038
+avg_volume               20687.25
+Name: 96, dtype: object
+BANKNIFTY 51720.75
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:40:40
+open                       519.95
+high                       521.95
+low                        518.35
+close                      520.75
+volume                       2430
+oi                         160920
+RSI_14                  55.804415
+avg_volume                20542.5
+Name: 97, dtype: object
+date          2024-07-30 12:40:44
+open                       479.45
+high                        482.9
+low                        478.15
+close                       482.9
+volume                        810
+oi                         126705
+RSI_14                  43.988209
+avg_volume                19648.5
+Name: 97, dtype: object
+BANKNIFTY 51723.45
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:41:45
+open                       519.95
+high                       521.95
+low                         511.3
+close                       518.0
+volume                       6015
+oi                         160920
+RSI_14                  54.738128
+avg_volume               20721.75
+Name: 97, dtype: object
+date          2024-07-30 12:41:46
+open                       479.45
+high                        486.0
+low                        478.15
+close                       480.9
+volume                       5775
+oi                         126705
+RSI_14                  43.206612
+avg_volume               19896.75
+Name: 97, dtype: object
+BANKNIFTY 51705.0
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:42:48
+open                       519.95
+high                       521.95
+low                         506.8
+close                       511.6
+volume                      10455
+oi                         160920
+RSI_14                  52.407635
+avg_volume               20943.75
+Name: 97, dtype: object
+date          2024-07-30 12:42:49
+open                       479.45
+high                       491.05
+low                        478.15
+close                       483.0
+volume                      10875
+oi                         126705
+RSI_14                  44.026724
+avg_volume               20151.75
+Name: 97, dtype: object
+BANKNIFTY 51708.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:43:52
+open                       519.95
+high                        522.0
+low                         506.8
+close                       517.0
+volume                      14400
+oi                         160200
+RSI_14                   54.36042
+avg_volume                21141.0
+Name: 97, dtype: object
+date          2024-07-30 12:43:53
+open                       479.45
+high                       491.05
+low                        475.65
+close                      481.95
+volume                      13650
+oi                         125730
+RSI_14                   43.61965
+avg_volume                20290.5
+Name: 97, dtype: object
+BANKNIFTY 51705.15
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:44:55
+open                       519.95
+high                        522.0
+low                         506.8
+close                      511.75
+volume                      15750
+oi                         160200
+RSI_14                  52.459982
+avg_volume                21208.5
+Name: 97, dtype: object
+date          2024-07-30 12:44:51
+open                       479.45
+high                       491.05
+low                        475.65
+close                       485.3
+volume                      14550
+oi                         125730
+RSI_14                  44.898189
+avg_volume                20335.5
+Name: 97, dtype: object
+BANKNIFTY 51708.45
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:45:58
+open                        514.2
+high                       517.85
+low                         508.9
+close                       517.4
+volume                       2700
+oi                         160200
+RSI_14                  54.374905
+avg_volume               20906.25
+Name: 98, dtype: object
+date          2024-07-30 12:46:00
+open                       485.85
+high                        489.9
+low                        482.15
+close                      482.75
+volume                       2355
+oi                         125730
+RSI_14                  44.232809
+avg_volume                19266.0
+Name: 98, dtype: object
+BANKNIFTY 51714.25
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:46:59
+open                        514.2
+high                       518.15
+low                         508.9
+close                       513.9
+volume                       5580
+oi                         162090
+RSI_14                  53.217168
+avg_volume               21050.25
+Name: 98, dtype: object
+date          2024-07-30 12:47:03
+open                       485.85
+high                        489.9
+low                         480.3
+close                      484.35
+volume                       3960
+oi                         127755
+RSI_14                  44.725581
+avg_volume               19346.25
+Name: 98, dtype: object
+BANKNIFTY 51687.55
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:48:00
+open                        568.6
+high                       574.25
+low                        555.55
+close                       559.6
+volume                       6855
+oi                         110265
+RSI_14                  50.529015
+avg_volume                12478.5
+Name: 98, dtype: object
+date          2024-07-30 12:48:06
+open                        440.0
+high                        450.0
+low                         436.5
+close                      444.05
+volume                       5040
+oi                         121980
+RSI_14                  46.525073
+avg_volume                10209.0
+Name: 98, dtype: object
+BANKNIFTY 51695.05
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:48:56
+open                        568.6
+high                       574.25
+low                        555.55
+close                      565.95
+volume                       7845
+oi                         110265
+RSI_14                   52.75601
+avg_volume                12528.0
+Name: 98, dtype: object
+date          2024-07-30 12:49:07
+open                        440.0
+high                        450.0
+low                         436.5
+close                      444.35
+volume                       7650
+oi                         121980
+RSI_14                  46.643867
+avg_volume                10339.5
+Name: 98, dtype: object
+BANKNIFTY 51704.35
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:50:11
+open                       515.35
+high                       515.35
+low                        512.15
+close                       513.8
+volume                        270
+oi                         155070
+RSI_14                  53.093797
+avg_volume               20940.75
+Name: 99, dtype: object
+date          2024-07-30 12:50:11
+open                        483.4
+high                        485.7
+low                         483.4
+close                       484.6
+volume                        510
+oi                         130380
+RSI_14                  44.963236
+avg_volume               19217.25
+Name: 99, dtype: object
+BANKNIFTY 51707.85
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:51:14
+open                       515.35
+high                        521.0
+low                         512.0
+close                       513.9
+volume                       2415
+oi                         155070
+RSI_14                  53.134576
+avg_volume                21048.0
+Name: 99, dtype: object
+date          2024-07-30 12:51:15
+open                        483.4
+high                       487.55
+low                        478.95
+close                      486.95
+volume                       1860
+oi                         130380
+RSI_14                  45.896628
+avg_volume               19284.75
+Name: 99, dtype: object
+BANKNIFTY 51702.85
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:52:15
+open                       515.35
+high                        521.0
+low                         510.0
+close                      517.45
+volume                       4470
+oi                         155850
+RSI_14                  54.451702
+avg_volume               21150.75
+Name: 99, dtype: object
+date          2024-07-30 12:52:18
+open                        483.4
+high                        488.0
+low                        478.95
+close                       480.5
+volume                       5790
+oi                         131805
+RSI_14                  43.501212
+avg_volume               19481.25
+Name: 99, dtype: object
+BANKNIFTY 51693.35
+At-the-money (ATM) strike price: 51600.0
+                    NAME OF OPTION  ...   STRIKE
+9451  BANKNIFTY 24 AUG 07 51600 CE  ...  51600.0
+9452  BANKNIFTY 24 AUG 07 51600 PE  ...  51600.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:53:13
+open                       567.15
+high                        577.0
+low                        564.65
+close                       572.6
+volume                       3045
+oi                         110535
+RSI_14                  54.906322
+avg_volume               11933.25
+Name: 99, dtype: object
+date          2024-07-30 12:53:14
+open                       439.85
+high                       443.45
+low                         431.2
+close                       437.3
+volume                       6435
+oi                         122145
+RSI_14                  44.105504
+avg_volume               10170.75
+Name: 99, dtype: object
+BANKNIFTY 51713.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:54:24
+open                       515.35
+high                        522.0
+low                         510.0
+close                       521.7
+volume                       8175
+oi                         155850
+RSI_14                  55.877181
+avg_volume                21336.0
+Name: 99, dtype: object
+date          2024-07-30 12:54:21
+open                        483.4
+high                        488.0
+low                         475.9
+close                      478.85
+volume                      12135
+oi                         131805
+RSI_14                   42.98396
+avg_volume                19798.5
+Name: 99, dtype: object
+BANKNIFTY 51723.25
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:55:28
+open                        524.3
+high                        528.0
+low                         521.7
+close                      526.35
+volume                       3840
+oi                         155070
+RSI_14                  57.360176
+avg_volume               20771.25
+Name: 100, dtype: object
+date          2024-07-30 12:55:29
+open                        474.0
+high                        475.2
+low                         470.0
+close                      471.95
+volume                       1155
+oi                         134460
+RSI_14                  40.915459
+avg_volume                19030.5
+Name: 100, dtype: object
+BANKNIFTY 51709.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:56:29
+open                        524.3
+high                        530.0
+low                         515.0
+close                      519.35
+volume                       9750
+oi                         155070
+RSI_14                  54.501938
+avg_volume               21066.75
+Name: 100, dtype: object
+date          2024-07-30 12:56:25
+open                        474.0
+high                       482.15
+low                        467.45
+close                       479.8
+volume                       5160
+oi                         134460
+RSI_14                  44.028887
+avg_volume               19230.75
+Name: 100, dtype: object
+BANKNIFTY 51709.2
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:57:32
+open                        524.3
+high                        530.0
+low                         515.0
+close                      519.45
+volume                      11625
+oi                         155070
+RSI_14                  54.542165
+avg_volume                21160.5
+Name: 100, dtype: object
+date          2024-07-30 12:57:31
+open                        474.0
+high                       482.15
+low                        467.45
+close                      478.15
+volume                       5925
+oi                         134460
+RSI_14                  43.362412
+avg_volume                19269.0
+Name: 100, dtype: object
+BANKNIFTY 51722.05
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:58:36
+open                        524.3
+high                        530.0
+low                         515.0
+close                      525.25
+volume                      14100
+oi                         156900
+RSI_14                  56.981478
+avg_volume               21284.25
+Name: 100, dtype: object
+date          2024-07-30 12:58:39
+open                        474.0
+high                       482.15
+low                        467.45
+close                      474.55
+volume                       6945
+oi                         135540
+RSI_14                  41.851723
+avg_volume                19320.0
+Name: 100, dtype: object
+BANKNIFTY 51702.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 12:59:41
+open                        524.3
+high                        530.0
+low                         515.0
+close                      520.85
+volume                      16260
+oi                         156900
+RSI_14                  55.111643
+avg_volume               21392.25
+Name: 100, dtype: object
+date          2024-07-30 12:59:41
+open                        474.0
+high                       482.15
+low                        467.45
+close                      477.45
+volume                       8595
+oi                         135540
+RSI_14                  43.074846
+avg_volume                19402.5
+Name: 100, dtype: object
+BANKNIFTY 51734.3
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:00:45
+open                        523.0
+high                       528.65
+low                         523.0
+close                      526.55
+volume                       2685
+oi                         156900
+RSI_14                  57.131414
+avg_volume               20904.75
+Name: 101, dtype: object
+date          2024-07-30 13:00:46
+open                        475.0
+high                       476.05
+low                        469.55
+close                       471.3
+volume                       2055
+oi                         135540
+RSI_14                  41.090274
+avg_volume               19166.25
+Name: 101, dtype: object
+BANKNIFTY 51704.75
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:01:48
+open                        523.0
+high                       528.95
+low                         516.0
+close                      520.15
+volume                       6465
+oi                         156120
+RSI_14                  54.781656
+avg_volume               21093.75
+Name: 101, dtype: object
+date          2024-07-30 13:01:43
+open                        475.0
+high                        481.0
+low                        469.55
+close                       479.0
+volume                      19440
+oi                         136965
+RSI_14                  43.758918
+avg_volume                20035.5
+Name: 101, dtype: object
+BANKNIFTY 51735.8
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:02:51
+open                        523.0
+high                        532.2
+low                         516.0
+close                      530.15
+volume                      12015
+oi                         156120
+RSI_14                  58.296512
+avg_volume               21371.25
+Name: 101, dtype: object
+date          2024-07-30 13:02:51
+open                        475.0
+high                        481.0
+low                         465.0
+close                       468.8
+volume                      28365
+oi                         136965
+RSI_14                  40.337582
+avg_volume               20481.75
+Name: 101, dtype: object
+BANKNIFTY 51718.5
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:03:53
+open                        523.0
+high                        532.2
+low                         516.0
+close                       524.4
+volume                      15615
+oi                         156120
+RSI_14                  56.404016
+avg_volume               21551.25
+Name: 101, dtype: object
+date          2024-07-30 13:03:55
+open                        475.0
+high                        481.0
+low                         465.0
+close                      468.55
+volume                      36840
+oi                         136965
+RSI_14                  40.263827
+avg_volume                20905.5
+Name: 101, dtype: object
+BANKNIFTY 51727.95
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:04:59
+open                        523.0
+high                        532.2
+low                         516.0
+close                       527.9
+volume                      19590
+oi                         153585
+RSI_14                  57.575875
+avg_volume                21750.0
+Name: 101, dtype: object
+date          2024-07-30 13:04:59
+open                        475.0
+high                        481.0
+low                         465.0
+close                       470.0
+volume                      43380
+oi                         141960
+RSI_14                  40.695402
+avg_volume                21232.5
+Name: 101, dtype: object
+BANKNIFTY 51727.55
+At-the-money (ATM) strike price: 51700.0
+                    NAME OF OPTION  ...   STRIKE
+9453  BANKNIFTY 24 AUG 07 51700 CE  ...  51700.0
+9454  BANKNIFTY 24 AUG 07 51700 PE  ...  51700.0
+
+[2 rows x 6 columns]
+date          2024-07-30 13:05:54
+open                        528.2
+high                        530.0
+low                         526.6
+close                      527.15
+volume                       2040
+oi                         153585
+RSI_14                   57.22093
+avg_volume               21111.75
+Name: 102, dtype: object
+date          2024-07-30 13:06:00
+open                       467.55
+high                        469.1
+low                         466.0
+close                       469.1
+volume                       1170
+oi                         141960
+RSI_14                  40.405904
+avg_volume               20382.75
+Name: 102, dtype: object
+ 8 columns passed, passed data had 1 columns
+list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/download_ohlc_xts.py", line 184, in <module>
+    get_dat_xts('BANKNIFTY', 2)
+  File "/home/ubuntu/trading_broker/download_ohlc_xts.py", line 127, in get_dat_xts
+    current_spot_price = (index_df["close"].iloc[-1]//100)*100
+TypeError: list indices must be integers or slices, not str

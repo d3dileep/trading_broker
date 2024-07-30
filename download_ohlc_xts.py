@@ -112,6 +112,13 @@ def get_dat_xts(symbol, segment):
     index_df, _ = xts.read_data(26001, 300,1, days=3)
     current_spot_price = (index_df["close"].iloc[-1]//100)*100
     nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
+    print(nearest_expiry)
+    if current_time <= start_time:
+        base_date = datetime.date.today()
+        start_datetime = datetime.datetime.combine(base_date, start_time)
+        current_datetime = datetime.datetime.combine(base_date, current_time)
+        print(f"sleeping for {(start_datetime - current_datetime).total_seconds()} seconds")
+        time.sleep((start_datetime - current_datetime).total_seconds())
     while current_time >= start_time and current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
         try:
@@ -121,8 +128,6 @@ def get_dat_xts(symbol, segment):
                 print("BANKNIFTY",index_df["close"].iloc[-1])
                 # Find at-the-money (ATM) strike price
                 atm_strike = df_option.iloc[(df_option['STRIKE'] - current_spot_price).abs().argsort()[:1]]
-                print("Nearest expiry date:", nearest_expiry, symbol)
-                # df_option["EXPIRY"] = df_option["EXPIRY"].apply(parse_custom_date)
                 print("At-the-money (ATM) strike price:", atm_strike['STRIKE'].values[0])        
                 # if symbol in  df_option["NAME OF OPTION"].to_list():
                 df_filter = df_option[(df_option["NAME OF OPTION"].str.contains(symbol))&
@@ -130,7 +135,7 @@ def get_dat_xts(symbol, segment):
                                     (df_option["EXPIRY"]==nearest_expiry)]
                 symbol_id_ce = df_filter["EXCHANGEID"].values[0]
                 symbol_id_pe = df_filter["EXCHANGEID"].values[1]
-            print(symbol_id_ce, symbol_id_pe, segment)
+            print(df_filter)
 
             df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.rsi(append=True)
