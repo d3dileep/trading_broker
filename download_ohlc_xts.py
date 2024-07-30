@@ -21,13 +21,14 @@ def send_to_telegram(message):
     response = requests.get(url)
     return response
 
-def check_buy(df):
+def check_buy(df, direction):
     last_row = df.iloc[-1]
-    print(last_row)
+    last_last_row = df.iloc[-2]
     # Condition 1: RSI_14 to be upward and between 30 to 40
-    condition1 = (last_row['RSI_14'] > df['RSI_14'].shift(1).iloc[-1]) & (last_row['RSI_14'] >= 30) & (last_row['RSI_14'] <= 40)
+    condition1 = (last_row['RSI_14'] > last_last_row['RSI_14']) & (last_row['RSI_14'] >= 30) & (last_row['RSI_14'] <= 40)
     # Condition 2: volume to be higher than avg_volume
     condition2 = last_row['volume'] > last_row['avg_volume']
+    print(direction, condition1, condition2)
     if condition1 & condition2:
         return True
     else:
@@ -98,7 +99,7 @@ def get_dat_xts(symbol, segment):
     print("downloaded files")
     # Define start and end times in IST
     start_time = datetime.time(9, 15, 0)
-    end_time = datetime.time(15, 30, 0)
+    end_time = datetime.time(23, 59, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
@@ -138,6 +139,10 @@ def get_dat_xts(symbol, segment):
             print(df_filter)
 
             df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
+            df_ce.ta.ha(append=True)
+            df_ce.drop(['open', 'high', 'low', 'close'], inplace=True)
+            df_ce = df_ce.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
+
             df_ce.ta.rsi(append=True)
             df_ce["avg_volume"] = ta.sma(df_ce["volume"], length=20)
             df_ce.dropna(inplace=True)
@@ -152,12 +157,16 @@ def get_dat_xts(symbol, segment):
                     send_to_telegram("PE selling status" + checking_sell_ce + " @" + str(close_price_ce))
                     is_bought_ce = False
             else:
-                is_bought_ce = check_buy(df_ce)
+                is_bought_ce = check_buy(df_ce, "CE buy check")
                 buy_price_ce = df_ce["close"].iloc[-1]
                 if is_bought_ce:
                     send_to_telegram("CE buying status"  + " @" + str(buy_price_ce))
             time.sleep(0.5)
             df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
+            df_pe.ta.ha(append=True)
+            df_pe.drop(['open', 'high', 'low', 'close'], inplace=True)
+            df_pe = df_pe.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
+
             df_pe.ta.rsi(append=True)
             df_pe["avg_volume"] = ta.sma(df_pe["volume"], length=20)
             df_pe.dropna(inplace=True)
@@ -171,7 +180,7 @@ def get_dat_xts(symbol, segment):
                     send_to_telegram("PE selling status" + checking_sell_pe + " @" + str(close_price_pe))
                     is_bought_pe = False
             else:
-                is_bought_pe = check_buy(df_pe)
+                is_bought_pe = check_buy(df_pe, "PE buy check")
                 buy_price_pe = df_pe["close"].iloc[-1]
                 if is_bought_pe:
                     send_to_telegram("PE buying status"  + " @" + str(buy_price_pe))
