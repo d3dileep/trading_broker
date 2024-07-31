@@ -1,0 +1,265 @@
+API connection response: {'type': 'success', 'code': 'e-response-0010', 'description': 'Provided Valid Credentials', 'result': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJKSEQwM18xZDZjOTQxMGZkYjI5MWIwYTFkOTMzIiwicHVibGljS2V5IjoiMWQ2Yzk0MTBmZGIyOTFiMGExZDkzMyIsImlhdCI6MTcyMjM5NzA3NCwiZXhwIjoxNzIyNDgzNDc0fQ.6RxkpWG_uyOnxlQWE4owAbVEapL0MvhJAKxKDXXgJwM', 'userID': 'JHD03', 'appVersion': '5.0.15'}}
+data_bnf_buy.ini
+BANKNIFTY
+downloaded files
+2024-08-07 00:00:00
+sleeping for 423.223272 seconds
+BANKNIFTY 51526.1
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+CE buy check True False
+PE buy check False False
+BANKNIFTY 51551.75
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+CE buy check True True
+CE buying status @557.625
+PE buy check False False
+BANKNIFTY 51498.35
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51510.95
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51514.8
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51511.15
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51495.55
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51494.65
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51470.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51469.0
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51474.75
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51504.2
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51485.55
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51515.55
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51547.95
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51478.3
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51422.15
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51436.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51444.65
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51455.8
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51457.9
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51476.6
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51524.95
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51517.1
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51520.8
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51506.35
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51502.25
+At-the-money (ATM) strike price: 51500.0
+                    NAME OF OPTION  ...   STRIKE
+9511  BANKNIFTY 24 AUG 07 51500 CE  ...  51500.0
+9512  BANKNIFTY 24 AUG 07 51500 PE  ...  51500.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51491.1
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51471.05
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False True
+BANKNIFTY 51473.7
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+BANKNIFTY 51473.2
+At-the-money (ATM) strike price: 51400.0
+                    NAME OF OPTION  ...   STRIKE
+9509  BANKNIFTY 24 AUG 07 51400 CE  ...  51400.0
+9510  BANKNIFTY 24 AUG 07 51400 PE  ...  51400.0
+
+[2 rows x 6 columns]
+PE buy check False False
+ 8 columns passed, passed data had 1 columns
+list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/download_ohlc_xts.py", line 194, in <module>
+    get_dat_xts('BANKNIFTY', 2)
+  File "/home/ubuntu/trading_broker/download_ohlc_xts.py", line 129, in get_dat_xts
+    current_spot_price = (index_df["close"].iloc[-1]//100)*100
+TypeError: list indices must be integers or slices, not str
