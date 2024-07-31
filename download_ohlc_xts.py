@@ -99,7 +99,7 @@ def get_dat_xts(symbol, segment):
     print("downloaded files")
     # Define start and end times in IST
     start_time = datetime.time(9, 15, 0)
-    end_time = datetime.time(23, 59, 0)
+    end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
@@ -140,7 +140,7 @@ def get_dat_xts(symbol, segment):
 
             df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.ha(append=True)
-            df_ce.drop(['open', 'high', 'low', 'close'], inplace=True)
+            df_ce.drop(['open', 'high', 'low', 'close'], axis=1, inplace=True)
             df_ce = df_ce.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
 
             df_ce.ta.rsi(append=True)
@@ -164,7 +164,7 @@ def get_dat_xts(symbol, segment):
             time.sleep(0.5)
             df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
             df_pe.ta.ha(append=True)
-            df_pe.drop(['open', 'high', 'low', 'close'], inplace=True)
+            df_pe.drop(['open', 'high', 'low', 'close'],axis=1, inplace=True)
             df_pe = df_pe.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
 
             df_pe.ta.rsi(append=True)
