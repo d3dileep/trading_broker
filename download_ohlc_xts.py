@@ -1,3 +1,5 @@
+import datetime
+print(datetime.datetime.now())
 from token1 import xts_data_token
 from xts_class2 import XTS_parse
 import configparser
@@ -98,7 +100,7 @@ def get_dat_xts(symbol, segment):
     # all_expiries = sorted(list(set([datetime.datetime.strptime(str(x)[4:10], '%y%m%d') for x in fo_instr_list[0].tolist()])))
     print("downloaded files")
     # Define start and end times in IST
-    start_time = datetime.time(9, 15, 0)
+    start_time = datetime.time(9, 20, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
@@ -109,6 +111,8 @@ def get_dat_xts(symbol, segment):
     buy_price_pe = 0
     stoploss_ce = 0
     stoploss_pe = 0
+    bought_symbol_id_ce = None
+    bought_symbol_id_pe = None
     # Find nearest expiry date
     index_df, _ = xts.read_data(26001, 300,1, days=3)
     current_spot_price = (index_df["close"].iloc[-1]//100)*100
@@ -120,6 +124,7 @@ def get_dat_xts(symbol, segment):
         current_datetime = datetime.datetime.combine(base_date, current_time)
         print(f"sleeping for {(start_datetime - current_datetime).total_seconds()} seconds")
         time.sleep((start_datetime - current_datetime).total_seconds())
+    current_time = datetime.datetime.now(IST).time()
     while current_time >= start_time and current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
         try:
@@ -129,16 +134,18 @@ def get_dat_xts(symbol, segment):
                 print("BANKNIFTY",index_df["close"].iloc[-1])
                 # Find at-the-money (ATM) strike price
                 atm_strike = df_option.iloc[(df_option['STRIKE'] - current_spot_price).abs().argsort()[:1]]
-                print("At-the-money (ATM) strike price:", atm_strike['STRIKE'].values[0])        
+                print("At-the-money (ATM) strike price:", current_time, atm_strike['STRIKE'].values[0])        
                 # if symbol in  df_option["NAME OF OPTION"].to_list():
                 df_filter = df_option[(df_option["NAME OF OPTION"].str.contains(symbol))&
                                     (df_option["STRIKE"]==atm_strike['STRIKE'].values[0])&
                                     (df_option["EXPIRY"]==nearest_expiry)]
                 symbol_id_ce = df_filter["EXCHANGEID"].values[0]
                 symbol_id_pe = df_filter["EXCHANGEID"].values[1]
-            print(df_filter)
-
-            df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
+            #print(df_filter)
+            if bought_symbol_id_ce:
+                df_ce, now = xts.read_data(bought_symbol_id_ce, 300,segment, days=3)
+            else:
+                df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.ha(append=True)
             df_ce.drop(['open', 'high', 'low', 'close'], axis=1, inplace=True)
             df_ce = df_ce.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
@@ -152,16 +159,23 @@ def get_dat_xts(symbol, segment):
             if is_bought_ce:
                 if stoploss_ce < close_price_ce * 0.8:
                     stoploss_ce = close_price_ce * 0.8
+                    print("CE stoploss update")
                 checking_sell_ce = check_trailing_stop_loss(close_price_ce, buy_price_ce, stoploss_ce)
                 if checking_sell_ce:
-                    send_to_telegram("PE selling status" + checking_sell_ce + " @" + str(close_price_ce))
+                    send_to_telegram("CE selling status" + checking_sell_ce + " @" + str(close_price_ce))
                     is_bought_ce = False
+                    bought_symbol_id_ce = None
             else:
                 is_bought_ce = check_buy(df_ce, "CE buy check")
                 buy_price_ce = df_ce["close"].iloc[-1]
                 if is_bought_ce:
-                    send_to_telegram("CE buying status"  + " @" + str(buy_price_ce))
+                    bought_symbol_id_ce = symbol_id_ce
+                    send_to_telegram(f"{current_spot_price} CE buying status"  + " @" + str(buy_price_ce))
             time.sleep(0.5)
+            if bought_symbol_id_pe:
+                df_pe, now = xts.read_data(bought_symbol_id_pe, 300,segment, days=3)
+            else:
+                df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
             df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
             df_pe.ta.ha(append=True)
             df_pe.drop(['open', 'high', 'low', 'close'],axis=1, inplace=True)
@@ -175,19 +189,21 @@ def get_dat_xts(symbol, segment):
             if is_bought_pe:
                 if stoploss_pe < close_price_pe * 0.8:
                     stoploss_pe = close_price_pe * 0.8
+                    print("PE stoploss update")
                 checking_sell_pe = check_trailing_stop_loss(close_price_pe, buy_price_pe, stoploss_pe)
                 if checking_sell_pe:
                     send_to_telegram("PE selling status" + checking_sell_pe + " @" + str(close_price_pe))
                     is_bought_pe = False
+                    bought_symbol_id_pe = None
             else:
                 is_bought_pe = check_buy(df_pe, "PE buy check")
                 buy_price_pe = df_pe["close"].iloc[-1]
                 if is_bought_pe:
-                    send_to_telegram("PE buying status"  + " @" + str(buy_price_pe))
+                    bought_symbol_id_pe = symbol_id_pe
+                    send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(buy_price_pe))
             time.sleep(60)
         except Exception as e:
             print(e)
-            raise
             continue
         
 get_dat_xts('BANKNIFTY', 2)
