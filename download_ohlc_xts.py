@@ -57,7 +57,7 @@ def get_nearest_expiry(df_option, symbol, current_spot_price):
     filtered_df['time_diff'] = (filtered_df['EXPIRY'] - pd.Timestamp('today')).dt.days
 
     # Get the index of the option with the smallest positive time difference
-    nearest_expiry_index = filtered_df[filtered_df['time_diff'] > 0]['time_diff'].idxmin()
+    nearest_expiry_index = filtered_df[filtered_df['time_diff'] >= 0]['time_diff'].idxmin()
     nearest_expiry = filtered_df.loc[nearest_expiry_index, 'EXPIRY']
 
     return nearest_expiry
@@ -125,8 +125,10 @@ def get_dat_xts(symbol, segment):
         print(f"sleeping for {(start_datetime - current_datetime).total_seconds()} seconds")
         time.sleep((start_datetime - current_datetime).total_seconds())
     current_time = datetime.datetime.now(IST).time()
+    i = 0
     while current_time >= start_time and current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
+        
         try:
             if segment ==2:
                 index_df, _ = xts.read_data(26001, 300,1, days=3)
@@ -144,6 +146,7 @@ def get_dat_xts(symbol, segment):
             #print(df_filter)
             if bought_symbol_id_ce:
                 df_ce, now = xts.read_data(bought_symbol_id_ce, 300,segment, days=3)
+                print("Bought CE symbol", bought_symbol_id_ce, df_ce["close"].iloc[-1])
             else:
                 df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.ha(append=True)
@@ -159,24 +162,26 @@ def get_dat_xts(symbol, segment):
             if is_bought_ce:
                 if stoploss_ce < close_price_ce * 0.8:
                     stoploss_ce = close_price_ce * 0.8
-                    print("CE stoploss update")
+                    print("CE stoploss update", stoploss_ce, close_price_ce)
                 checking_sell_ce = check_trailing_stop_loss(close_price_ce, buy_price_ce, stoploss_ce)
                 if checking_sell_ce:
                     send_to_telegram("CE selling status" + checking_sell_ce + " @" + str(close_price_ce))
                     is_bought_ce = False
                     bought_symbol_id_ce = None
+                    stoploss_ce = 0
             else:
                 is_bought_ce = check_buy(df_ce, "CE buy check")
                 buy_price_ce = df_ce["close"].iloc[-1]
                 if is_bought_ce:
                     bought_symbol_id_ce = symbol_id_ce
                     send_to_telegram(f"{current_spot_price} CE buying status"  + " @" + str(buy_price_ce))
-            time.sleep(0.5)
+            time.sleep(2)
             if bought_symbol_id_pe:
                 df_pe, now = xts.read_data(bought_symbol_id_pe, 300,segment, days=3)
+                print("Bought PE symbol", bought_symbol_id_pe, df_pe["close"].iloc[-1])
             else:
                 df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
-            df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
+            #df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
             df_pe.ta.ha(append=True)
             df_pe.drop(['open', 'high', 'low', 'close'],axis=1, inplace=True)
             df_pe = df_pe.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
@@ -189,18 +194,22 @@ def get_dat_xts(symbol, segment):
             if is_bought_pe:
                 if stoploss_pe < close_price_pe * 0.8:
                     stoploss_pe = close_price_pe * 0.8
-                    print("PE stoploss update")
+                    print("PE stoploss update", stoploss_pe, close_price_pe)
                 checking_sell_pe = check_trailing_stop_loss(close_price_pe, buy_price_pe, stoploss_pe)
                 if checking_sell_pe:
                     send_to_telegram("PE selling status" + checking_sell_pe + " @" + str(close_price_pe))
                     is_bought_pe = False
                     bought_symbol_id_pe = None
+                    stoploss_pe = 0
             else:
                 is_bought_pe = check_buy(df_pe, "PE buy check")
                 buy_price_pe = df_pe["close"].iloc[-1]
                 if is_bought_pe:
                     bought_symbol_id_pe = symbol_id_pe
                     send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(buy_price_pe))
+            if i==0:
+                send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
+                i+=1
             time.sleep(60)
         except Exception as e:
             print(e)
