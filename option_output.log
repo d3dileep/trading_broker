@@ -1,4 +1,4 @@
-2024-08-07 03:10:01.305958
+2024-08-21 03:10:01.967525
 Traceback (most recent call last):
   File "/home/ubuntu/trading_broker/download_ohlc_xts.py", line 3, in <module>
     from token1 import xts_data_token
