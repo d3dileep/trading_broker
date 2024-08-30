@@ -9,6 +9,7 @@ import time
 import pytz
 import datetime
 import requests
+from price_divergence import call_div_func
 import warnings
 warnings.filterwarnings("ignore")
  
@@ -23,18 +24,15 @@ def send_to_telegram(message):
     response = requests.get(url)
     return response
 
-def check_buy(df, direction):
-    last_row = df.iloc[-1]
-    last_last_row = df.iloc[-2]
-    # Condition 1: RSI_14 to be upward and between 30 to 40
-    condition1 = (last_row['RSI_14'] > last_last_row['RSI_14']) & (last_row['RSI_14'] >= 30) & (last_row['RSI_14'] <= 40)
-    # Condition 2: volume to be higher than avg_volume
-    condition2 = last_row['volume'] > last_row['avg_volume']
-    print(direction, condition1, condition2)
-    if condition1 & condition2:
-        return True
+def check_buy(data, direction):
+    if data["macd_stoch_rsi_sum_divergence"].iloc[-1] != 0:
+        if data["macd_stoch_rsi_sum_divergence"].iloc[-1] == -1:
+            return "Bearish"
+        if data["macd_stoch_rsi_sum_divergence"].iloc[-1] == 1:
+            return "Bullish"
     else:
-        return False
+        return None
+    
 def parse_custom_date(date_string):
   """Parses a date string in the format YY Mon DD into a datetime object using pandas."""
   parts = date_string.split()
@@ -150,15 +148,15 @@ def get_dat_xts(symbol, segment):
             else:
                 df_ce, now = xts.read_data(symbol_id_ce, 300,segment, days=3)
             df_ce.ta.ha(append=True)
-            df_ce.drop(['open', 'high', 'low', 'close'], axis=1, inplace=True)
-            df_ce = df_ce.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
-
+            df_ce.ta.macd(append=True)
             df_ce.ta.rsi(append=True)
-            df_ce["avg_volume"] = ta.sma(df_ce["volume"], length=20)
+            df_ce.ta.stoch(fastk_period=14, fastd_period=3, append=True)
+            df_ce.dropna(inplace=True)
+            df_ce.reset_index(inplace=True, drop=True)
+            df_ce = call_div_func(df_ce)
             df_ce.dropna(inplace=True)
             df_ce.reset_index(drop=True, inplace=True)
             close_price_ce = df_ce["close"].iloc[-1]
-            #print(df_ce.shape, df_ce)
             if is_bought_ce:
                 if stoploss_ce < close_price_ce * 0.8:
                     stoploss_ce = close_price_ce * 0.8
@@ -174,20 +172,20 @@ def get_dat_xts(symbol, segment):
                 buy_price_ce = df_ce["close"].iloc[-1]
                 if is_bought_ce:
                     bought_symbol_id_ce = symbol_id_ce
-                    send_to_telegram(f"{current_spot_price} CE buying status"  + " @" + str(buy_price_ce))
+                    send_to_telegram(f"{current_spot_price} CE {is_bought_ce} status"  + " @" + str(buy_price_ce))
             time.sleep(2)
             if bought_symbol_id_pe:
                 df_pe, now = xts.read_data(bought_symbol_id_pe, 300,segment, days=3)
                 print("Bought PE symbol", bought_symbol_id_pe, df_pe["close"].iloc[-1])
             else:
                 df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
-            #df_pe, now = xts.read_data(symbol_id_pe, 300,segment, days=3)
             df_pe.ta.ha(append=True)
-            df_pe.drop(['open', 'high', 'low', 'close'],axis=1, inplace=True)
-            df_pe = df_pe.rename(columns={'HA_open': 'open', 'HA_high': 'high', 'HA_low': 'low', 'HA_close': 'close'})
-
+            df_pe.ta.macd(append=True)
             df_pe.ta.rsi(append=True)
-            df_pe["avg_volume"] = ta.sma(df_pe["volume"], length=20)
+            df_pe.ta.stoch(fastk_period=14, fastd_period=3, append=True)
+            df_pe.dropna(inplace=True)
+            df_pe.reset_index(inplace=True, drop=True)
+            df_pe = call_div_func(df_pe)
             df_pe.dropna(inplace=True)
             df_pe.reset_index(drop=True, inplace=True)
             close_price_pe = df_pe["close"].iloc[-1]
@@ -206,7 +204,7 @@ def get_dat_xts(symbol, segment):
                 buy_price_pe = df_pe["close"].iloc[-1]
                 if is_bought_pe:
                     bought_symbol_id_pe = symbol_id_pe
-                    send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(buy_price_pe))
+                    send_to_telegram(f"{current_spot_price} PE {is_bought_pe} status"  + " @" + str(buy_price_pe))
             if i==0:
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
                 i+=1
