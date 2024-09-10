@@ -165,7 +165,7 @@ def get_dat_xts(symbol, segment):
                     print("CE stoploss update", stoploss_ce, close_price_ce)
                 checking_sell_ce = check_trailing_stop_loss(close_price_ce, buy_price_ce, stoploss_ce)
                 if checking_sell_ce:
-                    send_to_telegram("CE selling status" + checking_sell_ce + " @" + str(close_price_ce))
+                    send_to_telegram("CE selling status: " + checking_sell_ce + " @" + str(round(close_price_ce,2)))
                     is_bought_ce = False
                     bought_symbol_id_ce = None
                     stoploss_ce = 0
@@ -174,7 +174,7 @@ def get_dat_xts(symbol, segment):
                 buy_price_ce = df_ce["close"].iloc[-1]
                 if is_bought_ce:
                     bought_symbol_id_ce = symbol_id_ce
-                    send_to_telegram(f"{current_spot_price} CE buying status"  + " @" + str(buy_price_ce))
+                    send_to_telegram(f"{current_spot_price} CE buying status"  + " @ " + str(round(buy_price_ce,2)))
             time.sleep(2)
             if bought_symbol_id_pe:
                 df_pe, now = xts.read_data(bought_symbol_id_pe, 300,segment, days=3)
@@ -197,7 +197,7 @@ def get_dat_xts(symbol, segment):
                     print("PE stoploss update", stoploss_pe, close_price_pe)
                 checking_sell_pe = check_trailing_stop_loss(close_price_pe, buy_price_pe, stoploss_pe)
                 if checking_sell_pe:
-                    send_to_telegram("PE selling status" + checking_sell_pe + " @" + str(close_price_pe))
+                    send_to_telegram("PE selling status: " + checking_sell_pe + " @ " + str(round(close_price_pe,2)))
                     is_bought_pe = False
                     bought_symbol_id_pe = None
                     stoploss_pe = 0
@@ -206,7 +206,7 @@ def get_dat_xts(symbol, segment):
                 buy_price_pe = df_pe["close"].iloc[-1]
                 if is_bought_pe:
                     bought_symbol_id_pe = symbol_id_pe
-                    send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(buy_price_pe))
+                    send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(round(buy_price_pe,2)))
             if i==0:
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
                 i+=1

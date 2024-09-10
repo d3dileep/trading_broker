@@ -41,12 +41,12 @@ class XTSConnect(XTSCommon):
 
     # Default root API endpoint. It's possible to
     # override this by passing the `root` parameter during initialisation.
-    _default_root_uri = cfg.get('root_url', 'root')
+    _default_root_uri = "https://xts.compositedge.com/apimarketdata/auth/login"
     _default_login_uri = _default_root_uri + "/user/session"
     _default_timeout = 7  # In seconds
 
     # SSL Flag
-    _ssl_flag = cfg.get('SSL', 'disable_ssl')
+    _ssl_flag = True
 
     # Constants
     # Products
