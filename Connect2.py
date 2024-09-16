@@ -12,7 +12,7 @@ import logging
 import requests
 from requests.adapters import HTTPAdapter
 import configparser
-
+import Exception as ex
 log = logging.getLogger(__name__)
 
 

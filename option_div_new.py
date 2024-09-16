@@ -144,12 +144,13 @@ def generate_round_numbers(symbol, start):
 def get_dat_xts():
 
     try:
+        cfg = configparser.ConfigParser()
         cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
         xts_data_token('1d6c9410fdb291b0a1d933','Toqb450@EN','bnf_buy')
-        cfg.read("data_{}.ini".format('bnf_buy'))
+        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
 
     segment = 2
