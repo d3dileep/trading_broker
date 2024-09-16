@@ -79,7 +79,7 @@ def check_trailing_stop_loss(close_price, buy_price, stoploss):
 def get_dat_xts(symbol, segment):
 
     try:
-        cfg.read("data_{}.ini".format('bnf_buy'))
+        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
@@ -100,7 +100,7 @@ def get_dat_xts(symbol, segment):
     # all_expiries = sorted(list(set([datetime.datetime.strptime(str(x)[4:10], '%y%m%d') for x in fo_instr_list[0].tolist()])))
     print("downloaded files")
     # Define start and end times in IST
-    start_time = datetime.time(9, 20, 0)
+    start_time = datetime.time(0, 0, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
@@ -208,6 +208,7 @@ def get_dat_xts(symbol, segment):
                     bought_symbol_id_pe = symbol_id_pe
                     send_to_telegram(f"{current_spot_price} PE buying status"  + " @" + str(round(buy_price_pe,2)))
             if i==0:
+            
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
                 i+=1
             time.sleep(60)

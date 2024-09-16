@@ -12,7 +12,7 @@ def xts_order_token( API_KEY = 'f4599a642270f5031bd691', API_SECRET = 'Bxog870#v
     print(response)
     set_marketDataToken = response['result']['token']
     set_muserID = response['result']['userID']
-    token_filename = "token_order_{}.ini".format(text)
+    token_filename = "/home/ubuntu/trading_broker/token_order_{}.ini".format(text)
     print(token_filename )
     text_file = open(token_filename, "w")
     text_file.write("[ordertoken] \n token=%s \n" % set_marketDataToken)
@@ -27,7 +27,7 @@ def xts_data_token(API_KEY , API_SECRET ,text = 'token'):
     print("API connection response:", response)
     set_marketDataToken = response['result']['token']
     set_muserID = response['result']['userID']
-    token_filename = "data_{}.ini".format(text)
+    token_filename = "/home/ubuntu/trading_broker/data_{}.ini".format(text)
     print(token_filename )
     text_file = open(token_filename, "w")
     text_file.write("[datatoken] \n token=%s \n" % set_marketDataToken)

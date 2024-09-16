@@ -21,7 +21,10 @@ class XTS_parse:
         
         self.response = self.xt.get_config()
         # self.eq_data = self.equity_details()
-
+    
+    def get_option_instrumentID(self,exchangeSegment, series, symbol, expiryDate, optionType, strikePrice):
+        return self.xt.get_option_symbol(exchangeSegment, series, symbol, expiryDate, optionType, strikePrice)
+    
     def get_id(self,item):
         if item=='NIFTY':
             self.quantity = 50
