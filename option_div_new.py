@@ -1,3 +1,10 @@
+import os
+import sys
+
+# Change to the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
+
 import datetime
 print(datetime.datetime.now())
 from token1 import xts_data_token
@@ -161,8 +168,8 @@ def get_dat_xts():
     IST = pytz.timezone('Asia/Kolkata')
 
     # Define start and end times in IST
-    start_time = datetime.time(9, 20, 0)
-    end_time = datetime.time(15, 30, 0)
+    start_time = datetime.time(0, 20, 0)
+    end_time = datetime.time(23, 59, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
@@ -176,19 +183,20 @@ def get_dat_xts():
     option_id = dict()
     # Find nearest expiry date
     for symbol in symbol_list:
-      payload, all_dict = nse_quote_ltp(symbol)
-      current_expiry = all_dict["option_latest_expiry"]
-      current_expiry = current_expiry.replace("-","")
-      next_expiry = all_dict["option_next_expiry"]
-      next_expiry = next_expiry.replace("-","")
-      expiry_list = [current_expiry, next_expiry]
-      current_spot_price = all_dict["current_price"]
-      strike_price_list = generate_round_numbers(symbol, current_spot_price)
-      optiontype_list = ["CE","PE"]
-      print(current_spot_price)
-      print(expiry_list) 
-      for expiry in expiry_list:
-        for strike_price in strike_price_list:
+      try:
+        payload, all_dict = nse_quote_ltp(symbol)
+        current_expiry = all_dict["option_latest_expiry"]
+        current_expiry = current_expiry.replace("-","")
+        next_expiry = all_dict["option_next_expiry"]
+        next_expiry = next_expiry.replace("-","")
+        expiry_list = [current_expiry, next_expiry]
+        current_spot_price = all_dict["current_price"]
+        strike_price_list = generate_round_numbers(symbol, current_spot_price)
+        optiontype_list = ["CE","PE"]
+        print(current_spot_price)
+        print(expiry_list) 
+        for expiry in expiry_list:
+          for strike_price in strike_price_list:
             for optiontype in optiontype_list:
                 try:
                     if ((strike_price > current_spot_price)&(optiontype == "CE"))|((strike_price < current_spot_price)&(optiontype == "PE")):
@@ -203,8 +211,10 @@ def get_dat_xts():
                     option_id[f'{symbol}{strike_price}{optiontype}{expiry}']= str(response["result"][0]["ExchangeInstrumentID"])
                 except Exception as e:
                     print("No data",e)
-                    raise
-                    #continue
+                    
+                    continue
+      except:
+          continue
     print(option_id)
     if current_time <= start_time:
         base_date = datetime.date.today()

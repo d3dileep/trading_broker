@@ -1,6 +1,6 @@
 import datetime
 print(datetime.datetime.now())
-from token1 import xts_data_token
+from token2 import xts_data_token
 from xts_class2 import XTS_parse
 import configparser
 import pandas as pd
@@ -80,12 +80,12 @@ def get_dat_xts(symbol, segment):
 
     try:
         cfg = configparser.ConfigParser()
-        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
+        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
-        xts_data_token('1d6c9410fdb291b0a1d933','Toqb450@EN','bnf_buy')
-        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
+        xts_data_token('85135d5e950fbc8b29d999','Vqhv461@eP','bnf_buy')
+        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
 
     print(symbol)
@@ -217,5 +217,5 @@ def get_dat_xts(symbol, segment):
             print(e)
             continue
         
-get_dat_xts('BANKNIFTY', 2)
+#get_dat_xts('BANKNIFTY', 2)
 
