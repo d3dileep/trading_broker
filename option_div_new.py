@@ -168,8 +168,8 @@ def get_dat_xts():
     IST = pytz.timezone('Asia/Kolkata')
 
     # Define start and end times in IST
-    start_time = datetime.time(0, 20, 0)
-    end_time = datetime.time(23, 59, 0)
+    start_time = datetime.time(8, 0, 0)
+    end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
@@ -210,7 +210,7 @@ def get_dat_xts():
                     strikePrice=strike_price)
                     option_id[f'{symbol}{strike_price}{optiontype}{expiry}']= str(response["result"][0]["ExchangeInstrumentID"])
                 except Exception as e:
-                    print("No data",e)
+                    print("No data",e, expiry, strike_price, optiontype)
                     
                     continue
       except:
@@ -226,8 +226,8 @@ def get_dat_xts():
     i = 0
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
-      try:
-          for option_symbol, opt_id in option_id.items():
+      for option_symbol, opt_id in option_id.items():
+          try:
             df_ce, now = xts.read_data(opt_id, 300,segment, days=3)
             df_ce.rename(columns={'open': 'Open', 'close': 'Close','date':'Date','low':'Low','high':'High'}, inplace=True)
             df_ce.ta.macd(append=True)
@@ -246,10 +246,9 @@ def get_dat_xts():
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
                 i+=1
             time.sleep(10)
-          print("one loop completed")
-      except Exception as e:
-          print(option_symbol, e)
-          continue
+          except Exception as e:
+            print(option_symbol, e)
+            continue
         
 get_dat_xts()
 

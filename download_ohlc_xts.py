@@ -101,7 +101,7 @@ def get_dat_xts(symbol, segment):
     # all_expiries = sorted(list(set([datetime.datetime.strptime(str(x)[4:10], '%y%m%d') for x in fo_instr_list[0].tolist()])))
     print("downloaded files")
     # Define start and end times in IST
-    start_time = datetime.time(0, 0, 0)
+    start_time = datetime.time(9, 15, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST

@@ -136,7 +136,8 @@ class XTS_parse:
             data[['open','high','low','close','volume','oi']] = data[['open','high','low','close','volume','oi']].apply(pd.to_numeric)
 
         except Exception as e:
-            print(item, e)
+            print( e)
+            data = pd.Dataframe()
             pass
         return data, to_d
 
