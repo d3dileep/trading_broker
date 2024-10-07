@@ -137,7 +137,7 @@ class XTS_parse:
 
         except Exception as e:
             print( e)
-            data = pd.Dataframe()
+            data = pd.DataFrame()
             pass
         return data, to_d
 
