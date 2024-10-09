@@ -115,10 +115,17 @@ def get_dat_xts(symbol, segment):
     bought_symbol_id_ce = None
     bought_symbol_id_pe = None
     # Find nearest expiry date
-    index_df, _ = xts.read_data(26001, 300,1, days=3)
-    current_spot_price = (index_df["close"].iloc[-1]//100)*100
-    nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
-    print(nearest_expiry)
+    try:
+        index_df, _ = xts.read_data(26001, 300,1, days=3)
+        current_spot_price = (index_df["close"].iloc[-1]//100)*100
+        nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
+        print(nearest_expiry)
+    except:
+        time.sleep(5)
+        index_df, _ = xts.read_data(26001, 300,1, days=3)
+        current_spot_price = (index_df["close"].iloc[-1]//100)*100
+        nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
+        print(nearest_expiry)
     if current_time <= start_time:
         base_date = datetime.date.today()
         start_datetime = datetime.datetime.combine(base_date, start_time)

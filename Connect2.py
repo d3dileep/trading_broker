@@ -526,7 +526,7 @@ class XTSConnect(XTSCommon):
             response = self._get('market.instruments.ohlc', params)
             return response
         except Exception as e:
-            return response['description']
+            return 'failed to fetch data'
 
     def get_series(self, exchangeSegment):
         try:
