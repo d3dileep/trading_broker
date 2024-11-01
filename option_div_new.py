@@ -16,7 +16,7 @@ import time
 import pytz
 import datetime
 import requests
-from price_divergence import call_div_func
+from price_divergence_option import call_div_func
 from nsepythonserver import *
 import warnings
 warnings.filterwarnings("ignore")
@@ -138,7 +138,7 @@ def generate_round_numbers(symbol, start):
     upper_bound = round_up(start, base)
 
     # Generate round numbers: 3 below and 3 above
-    for i in [-4,-3,-2,-1,1,2,3,4]:
+    for i in [-1,0,1,2]:
         round_number = lower_bound + i * base
         if round_number >= 0:
             round_numbers.append(int(round_number))
@@ -168,7 +168,7 @@ def get_dat_xts():
     IST = pytz.timezone('Asia/Kolkata')
 
     # Define start and end times in IST
-    start_time = datetime.time(8, 0, 0)
+    start_time = datetime.time(9, 10, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
@@ -199,8 +199,8 @@ def get_dat_xts():
           for strike_price in strike_price_list:
             for optiontype in optiontype_list:
                 try:
-                    if ((strike_price > current_spot_price)&(optiontype == "CE"))|((strike_price < current_spot_price)&(optiontype == "PE")):
-                        continue
+                    #if ((strike_price > current_spot_price)&(optiontype == "CE"))|((strike_price < current_spot_price)&(optiontype == "PE")):
+                    #    continue
                     response = xts.get_option_instrumentID(
                     exchangeSegment=2,
                     series='OPTIDX',
@@ -227,8 +227,9 @@ def get_dat_xts():
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
       for option_symbol, opt_id in option_id.items():
+        for interval in [300]:
           try:
-            df_ce, now = xts.read_data(opt_id, 300,segment, days=3)
+            df_ce, now = xts.read_data(opt_id, interval,segment, days=3)
             df_ce.rename(columns={'open': 'Open', 'close': 'Close','date':'Date','low':'Low','high':'High'}, inplace=True)
             df_ce.ta.macd(append=True)
             df_ce.ta.rsi(append=True)
@@ -237,18 +238,20 @@ def get_dat_xts():
             df_ce.reset_index(inplace=True, drop=True)
             df_ce = call_div_func(df_ce)
             ltp = df_ce["Close"].iloc[-1]
-            if (df_ce['RSI_14'].iloc[-20:].mean()>60)&((df_ce['macd_stoch_sum_divergence'].iloc[-1]== -1)|
-                    (df_ce['macd_rsi_sum_divergence'].iloc[-1]== -1)|(df_ce['stoch_rsi_sum_divergence'].iloc[-1]== -1)):
-                send_to_telegram(f"sell {option_symbol} @ {ltp}")
-        
+            if ((df_ce['macd_stoch_rsi_sum_divergence'].iloc[-1]== 1)):
+                send_to_telegram(f"Buy {option_symbol} @ {ltp} with interval {interval} sec")
+            if ((df_ce['macd_stoch_rsi_sum_divergence'].iloc[-1]== -1)):
+                send_to_telegram(f"Sell {option_symbol} @ {ltp} with interval {interval} sec")
           # ['date', 'open', 'high', 'low', 'close', 'volume', 'oi', 'MACD_12_26_9','MACDh_12_26_9', 'MACDs_12_26_9', 'RSI_14', 'STOCHk_14_3_3','STOCHd_14_3_3']'macd_stoch_sum_divergence','macd_rsi_sum_divergence', 'stoch_rsi_sum_divergence','macd_stoch_rsi_sum_divergence'
             if i==0:
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
                 i+=1
-            time.sleep(10)
+            time.sleep(2)
+            print(symbol,df_ce["Close"].iloc[-1])
           except Exception as e:
             print(option_symbol, e)
             continue
+      time.sleep(150)
         
 get_dat_xts()
 

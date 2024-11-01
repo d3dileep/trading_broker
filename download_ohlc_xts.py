@@ -75,7 +75,24 @@ def check_trailing_stop_loss(close_price, buy_price, stoploss):
         return "Target achieved"
     else:
         return None
-    
+
+from nsepythonserver import *
+
+def nse_quote_ltp(symbol):
+  payload = nse_quote(symbol)
+  print(payload.keys())
+  all_dict = dict()
+
+  selected_key = next((key for key in payload["expiryDatesByInstrument"] if "futures" in key.lower()), None)
+  all_dict["fut_latest_expiry"]= payload["expiryDatesByInstrument"][selected_key][0]
+  all_dict["fut_next_expiry"]= payload["expiryDatesByInstrument"][selected_key][1]
+  selected_key = next((key for key in payload["expiryDatesByInstrument"] if "options" in key.lower()), None)
+  all_dict["option_latest_expiry"]= payload["expiryDatesByInstrument"][selected_key][0]
+  all_dict["option_next_expiry"]= payload["expiryDatesByInstrument"][selected_key][1]
+  all_dict["current_price"] = payload["underlyingValue"]
+
+  return payload, all_dict
+
 def get_dat_xts(symbol, segment):
 
     try:
@@ -121,10 +138,9 @@ def get_dat_xts(symbol, segment):
         nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
         print(nearest_expiry)
     except:
-        time.sleep(5)
-        index_df, _ = xts.read_data(26001, 300,1, days=3)
-        current_spot_price = (index_df["close"].iloc[-1]//100)*100
-        nearest_expiry = get_nearest_expiry(df_option, symbol, current_spot_price)
+        symbol="BANKNIFTY"
+        payload, all_dict = nse_quote_ltp(symbol)
+        nearest_expiry = all_dict["current_price"]
         print(nearest_expiry)
     if current_time <= start_time:
         base_date = datetime.date.today()
