@@ -227,9 +227,10 @@ def get_dat_xts():
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
       for option_symbol, opt_id in option_id.items():
-        for interval in [300]:
+        for interval in [60]:
           try:
             df_ce, now = xts.read_data(opt_id, interval,segment, days=3)
+            print(df_ce.shape, option_symbol)
             df_ce.rename(columns={'open': 'Open', 'close': 'Close','date':'Date','low':'Low','high':'High'}, inplace=True)
             df_ce.ta.macd(append=True)
             df_ce.ta.rsi(append=True)
