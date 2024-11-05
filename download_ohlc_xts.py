@@ -11,7 +11,7 @@ import sys
 # Change to the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
-from option_div_new import round_down, round_up, generate_round_numbers
+#from option_div_new import round_down, round_up, generate_round_numbers
 import time
 import pytz
 import datetime
@@ -29,6 +29,57 @@ def send_to_telegram(message):
     url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}'
     response = requests.get(url)
     return response
+
+def round_down(value, base):
+    """
+    Round down to the nearest multiple of base.
+    
+    :param value: The value to be rounded down.
+    :param base: The base to round down to.
+    :return: The rounded down value.
+    """
+    return value - (value % base)
+
+def round_up(value, base):
+    """
+    Round up to the nearest multiple of base.
+    
+    :param value: The value to be rounded up.
+    :param base: The base to round up to.
+    :return: The rounded up value.
+    """
+    return value + (base - (value % base)) if value % base != 0 else value
+
+def generate_round_numbers(symbol, start):
+    """
+    Generate a list of round numbers around the start value based on the symbol.
+    
+    :param symbol: The symbol for which to generate round numbers (e.g., 'BANKNIFTY' or 'NIFTY')
+    :param start: The starting value which is not a multiple of the rounding base
+    :return: A list of round numbers around the start value
+    """
+    round_numbers = []
+
+    if symbol == 'BANKNIFTY':
+        base = 500
+    elif symbol == 'NIFTY':
+        base = 100
+    else:
+        raise ValueError("Unsupported symbol. Use 'BANKNIFTY' or 'NIFTY'.")
+
+    lower_bound = round_down(start, base)
+    upper_bound = round_up(start, base)
+
+    # Generate round numbers: 3 below and 3 above
+    for i in [-1,0,1,2]:
+        round_number = lower_bound + i * base
+        if round_number >= 0:
+            round_numbers.append(int(round_number))
+
+    # Remove duplicates and sort the result
+    round_numbers = sorted(set(round_numbers))
+
+    return round_numbers
 
 def check_buy(df, direction):
     last_row = df.iloc[-1]
@@ -117,7 +168,7 @@ def get_dat_xts():
     # Timezone and timing setup
     IST = pytz.timezone('Asia/Kolkata')
     start_time = datetime.time(9, 15, 0)
-    end_time = datetime.time(15, 30, 0)
+    end_time = datetime.time(23, 59, 0)
     current_time = datetime.datetime.now(IST).time()
 
     # Variables for tracking trades
@@ -131,6 +182,7 @@ def get_dat_xts():
     symbol_list = ['NIFTYNXT50', 'FINNIFTY', 'MIDCPNIFTY', 'BANKNIFTY', 'NIFTY']
     for symbol in symbol_list:
         try:
+            print(symbol)
             payload, all_dict = nse_quote_ltp(symbol)
             current_expiry = all_dict["option_latest_expiry"].replace("-", "")
             next_expiry = all_dict["option_next_expiry"].replace("-", "")
@@ -165,6 +217,7 @@ def get_dat_xts():
         time.sleep((datetime.datetime.combine(datetime.date.today(), start_time) - datetime.datetime.combine(datetime.date.today(), current_time)).total_seconds())
     ce_symbol, pe_symbol = '', ''
     i = 0
+    print(option_id)
     while start_time <= current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
         for option_symbol, opt_id in option_id.items():

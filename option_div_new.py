@@ -169,7 +169,7 @@ def get_dat_xts():
 
     # Define start and end times in IST
     start_time = datetime.time(0, 10, 0)
-    end_time = datetime.time(15, 30, 0)
+    end_time = datetime.time(23, 59, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
@@ -202,6 +202,7 @@ def get_dat_xts():
                     optionType=optiontype,
                     strikePrice=strike_price)
                     option_id[f'{symbol}{strike_price}{optiontype}{expiry}']= str(response["result"][0]["ExchangeInstrumentID"])
+                    print(f'extracted option ----> {str(response["result"][0]["ExchangeInstrumentID"])}')
                 except Exception as e:
                     print("No data",e, expiry, strike_price, optiontype)
                     
@@ -220,10 +221,9 @@ def get_dat_xts():
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
       for option_symbol, opt_id in option_id.items():
-        for interval in [300]:
           try:
-            df_ce, now = xts.read_data(opt_id, interval,segment, days=3)
-            print(df_ce.shape, option_symbol)
+            df_ce, now = xts.read_data(opt_id, 300, segment, days=5)
+            print(df_ce.shape,opt_id, segment, option_symbol)
             df_ce.rename(columns={'open': 'Open', 'close': 'Close','date':'Date','low':'Low','high':'High'}, inplace=True)
             df_ce.ta.macd(append=True)
             df_ce.ta.rsi(append=True)
