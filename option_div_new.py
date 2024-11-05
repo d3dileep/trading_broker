@@ -152,12 +152,12 @@ def get_dat_xts():
 
     try:
         cfg = configparser.ConfigParser()
-        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
+        cfg.read("./data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
         xts_data_token('1d6c9410fdb291b0a1d933','Toqb450@EN','bnf_buy')
-        cfg.read("/home/ubuntu/trading_broker/data_{}.ini".format('bnf_buy'))
+        cfg.read("./data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
 
     segment = 2
@@ -168,18 +168,11 @@ def get_dat_xts():
     IST = pytz.timezone('Asia/Kolkata')
 
     # Define start and end times in IST
-    start_time = datetime.time(9, 10, 0)
+    start_time = datetime.time(0, 10, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
-    is_bought_ce = False
-    is_bought_pe = False
-    buy_price_ce = 0
-    buy_price_pe = 0
-    stoploss_ce = 0
-    stoploss_pe = 0
-    bought_symbol_id = dict()
     option_id = dict()
     # Find nearest expiry date
     for symbol in symbol_list:
@@ -227,7 +220,7 @@ def get_dat_xts():
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
       for option_symbol, opt_id in option_id.items():
-        for interval in [60]:
+        for interval in [300]:
           try:
             df_ce, now = xts.read_data(opt_id, interval,segment, days=3)
             print(df_ce.shape, option_symbol)
