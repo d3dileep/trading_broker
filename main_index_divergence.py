@@ -30,7 +30,7 @@ def main_index():
     end_time = datetime.time(15, 30, 0)
     # Get current time in IST
     current_time = datetime.datetime.now(IST).time()
-    duration = [('1m','1d'),('5m','5d'),('15m','5d'),('30m','1mo'),('1h','6mo'),('4h','6mo'),("1d","1y")]
+    duration = [('5m','5d'),('15m','5d'),('30m','1mo'),('1h','6mo'),('4h','6mo'),("1d","1y")]
     if current_time <= start_time:
         base_date = datetime.date.today()
         start_datetime = datetime.datetime.combine(base_date, start_time)
@@ -60,6 +60,7 @@ def main_index():
                 except:
                     data_small_int_1h = get_data(symbol, interval=interval)
                     data = data_small_int_1h.copy()
+                data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
                 data.ta.macd(append=True)
                 data.ta.rsi(append=True)
                 data.ta.stoch(fastk_period=14, fastd_period=3, append=True)
@@ -75,7 +76,7 @@ def main_index():
                 print(f'{symbol} for interval {item} with data len {datetime.datetime.now()}')
                 time.sleep(1)
             except Exception as e:
-                #print(f"Error processing {symbol} {item}: {traceback.format_exc()}")
+                print(f"Error processing {symbol} {item}: {traceback.format_exc()} at time {datetime.datetime.now(IST)}")
                 continue
         
         time.sleep(60)

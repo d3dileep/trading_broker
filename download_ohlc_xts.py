@@ -1,16 +1,18 @@
 import datetime
-print(datetime.datetime.now())
-from token2 import xts_data_token
-from xts_class2 import XTS_parse
-import configparser
-import pandas as pd
-import pandas_ta as ta
 import os
 import sys
 
 # Change to the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
+
+print(datetime.datetime.now())
+from token2 import xts_data_token
+from xts_class2 import XTS_parse
+import configparser
+import pandas as pd
+import pandas_ta as ta
+
 #from option_div_new import round_down, round_up, generate_round_numbers
 import time
 import pytz
@@ -153,22 +155,26 @@ def nse_quote_ltp(symbol):
 
 
 def get_dat_xts():
+    try:
+        os.remove("./data1_{}.ini".format('bnf_buy'))
+    except:
+        pass
     # Setup config and initialize XTS
     try:
         cfg = configparser.ConfigParser()
-        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
+        cfg.read("./data1_{}.ini".format('bnf_buy'))
         xts = XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
         xts_data_token('85135d5e950fbc8b29d999', 'Vqhv461@eP', 'bnf_buy')
-        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
+        cfg.read("./data1_{}.ini".format('bnf_buy'))
         xts = XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
-
+    print(xts.response)
     segment = 2
     # Timezone and timing setup
     IST = pytz.timezone('Asia/Kolkata')
-    start_time = datetime.time(9, 15, 0)
-    end_time = datetime.time(23, 59, 0)
+    start_time = datetime.time(9, 12, 0)
+    end_time = datetime.time(15, 30, 0)
     current_time = datetime.datetime.now(IST).time()
 
     # Variables for tracking trades
@@ -220,6 +226,7 @@ def get_dat_xts():
     print(option_id)
     while start_time <= current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
+        time.sleep(200)
         for option_symbol, opt_id in option_id.items():
             try:
                 # Read CE/PE data based on the option type in opt_id
@@ -238,7 +245,8 @@ def get_dat_xts():
 
                 # Buy and sell conditions
                 if "CE" in option_symbol:
-                    if (is_bought_ce is True) and (ce_symbol == option_symbol):
+                    if (is_bought_ce is True):
+                      if (ce_symbol == option_symbol):
                         if stoploss_ce < close_price * 0.8:
                             stoploss_ce = close_price * 0.8
                         if check_trailing_stop_loss(close_price, buy_price_ce, stoploss_ce):
@@ -253,7 +261,8 @@ def get_dat_xts():
                             send_to_telegram(f"{option_symbol} buying status @ {buy_price_ce:.2f}")
 
                 elif "PE" in option_symbol:
-                    if (is_bought_pe is True) and (pe_symbol == option_symbol):
+                    if (is_bought_pe is True):
+                      if (pe_symbol == option_symbol):
                         if stoploss_pe < close_price * 0.8:
                             stoploss_pe = close_price * 0.8
                         if check_trailing_stop_loss(close_price, buy_price_pe, stoploss_pe):
@@ -273,9 +282,9 @@ def get_dat_xts():
                     send_to_telegram("Good Morning, starting Strategy run")
                     i += 1
                 
-                time.sleep(60)
+                time.sleep(4)
             except Exception as e:
                 print(option_symbol, e)
                 continue
-
+    
 get_dat_xts()
