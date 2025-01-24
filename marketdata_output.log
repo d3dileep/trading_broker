@@ -1,4 +1,3 @@
-Updated data saved to /home/ubuntu/trading_broker/market_data/NIFTY_1m.csv
 Traceback (most recent call last):
   File "/home/ubuntu/trading_broker/download_market_data.py", line 25, in <module>
     df_existing = pd.read_csv(file_path)
