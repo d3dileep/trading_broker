@@ -7,6 +7,11 @@ import time
 import requests
 import pytz
 import datetime
+from aws_dynamo_pandas import DynamoDBHandler
+
+table_name = "index_divergence"
+handler = DynamoDBHandler(table_name)
+handler.create_table(table_name,"date")
 
 def send_to_telegram(message):
     token = '1242019168:AAGB9EVv01WkskLJf3DlFp7C_dNvwm1r21E'
@@ -70,9 +75,12 @@ def main_index():
                 if data["macd_stoch_rsi_sum_divergence"].iloc[-1] != 0:
                     if data["macd_stoch_rsi_sum_divergence"].iloc[-1] == -1:
                         send_to_telegram(f"{index_map[symbol]} with interval {item[0]} showing Bearish @ {data['Close'].iloc[-1]}")
+                        df_dv = pd.DataFrame({"name":symbol,"date":int(datetime.datetime.now().timestamp()),"signal_type":"MACD_RSI_STOCH","direction":"SELL","LTP":data['Close'].iloc[-1],"interval":interval})
                     if data["macd_stoch_rsi_sum_divergence"].iloc[-1] == 1:
                         send_to_telegram(f"{index_map[symbol]} with interval {item[0]} showing Bullish @ {data['Close'].iloc[-1]}")
+                        df_dv = pd.DataFrame({"name":symbol,"date":int(datetime.datetime.now().timestamp()),"signal_type":"MACD_RSI_STOCH","direction":"BUY","LTP":data['Close'].iloc[-1],"interval":interval})
                     capture_list.append([symbol, item, data["macd_stoch_rsi_sum_divergence"].iloc[-1]])
+                    handler.insert_data(df_dv, partition_key="symbol", sort_key="date")
                 print(f'{symbol} for interval {item} with data len {datetime.datetime.now()}')
                 time.sleep(1)
             except Exception as e:

@@ -148,7 +148,7 @@ def call_div_func(data):
   # Create a new column 'sum_divergence' and initialize it with zeros
     data['macd_stoch_rsi_sum_divergence'] = 0
     # Set the value of 'sum_divergence' to the sum of the two columns where both are non-zero
-    data.loc[((data['stoch_bullish_sum'] != 0) & (data['rsi_bullish_sum'] != 0) & (data['macd_bearish_sum'] != 0)), 'macd_stoch_rsi_sum_divergence'] = 1
+    data.loc[((data['stoch_bullish_sum'] != 0) & (data['rsi_bullish_sum'] != 0) & (data['macd_bullish_sum'] != 0)), 'macd_stoch_rsi_sum_divergence'] = 1
     data.loc[((data['stoch_bearish_sum'] != 0) & (data['rsi_bearish_sum'] != 0) & (data['macd_bearish_sum'] != 0)), 'macd_stoch_rsi_sum_divergence'] = -1
 
     return data
