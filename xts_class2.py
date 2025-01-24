@@ -122,7 +122,7 @@ class XTS_parse:
         try:
             response = self.xt.get_ohlc(exchangeSegment=exchange,exchangeInstrumentID=symbol_id,
                 startTime=from_d,endTime=to_d,compressionValue=interval)
-            # print(response)
+            #print(response)
             data = response['result']['dataReponse']
             result = [x.strip() for x in data.split(',')]
             value =[]

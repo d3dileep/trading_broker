@@ -1,0 +1,1727 @@
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+Lets Monitor the market
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 03:45:03.887285
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 03:45:05.797452
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 03:45:07.409660
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 03:45:09.356134
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 03:45:10.966620
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 03:45:12.874158
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 03:45:14.509465
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 09:15:15.590026+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 03:50:16.409080
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 03:50:18.029830
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 03:50:19.646832
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 03:50:21.269509
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 03:55:23.174346
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 03:55:24.787096
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 03:55:26.406927
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 03:55:28.034684
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:00:29.995877
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 04:00:32.380984
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 04:00:34.018473
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:00:35.916074
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 04:00:37.843706
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 04:00:39.254922
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:00:40.942432
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 04:00:42.867945
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 04:00:44.304365
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:00:45.986321
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 09:30:47.050061+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 09:30:47.062382+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:05:47.913351
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:05:49.541573
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:05:51.167642
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:05:52.807190
+NIFTY50 with interval 5m showing Bearish @ 24278.150390625
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:10:55.437466
+BANKNIFTY with interval 5m showing Bearish @ 52302.80078125
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:10:57.642134
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:10:59.273772
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:11:00.910014
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:15:02.776278
+NIFTY50 with interval 15m showing Bearish @ 24260.0
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 04:15:05.267959
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:15:06.896088
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 04:15:08.813219
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:15:10.438375
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 04:15:12.346379
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:15:13.973495
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 09:45:15.043049+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:20:15.900884
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:20:17.522323
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:20:19.150901
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:20:20.777325
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:25:22.764016
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:25:24.396140
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:25:26.160399
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:25:27.790039
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 04:29:32.484842
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 04:29:40.251351
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 04:29:41.745324
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 04:29:46.145191
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 04:29:53.883073
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 04:29:55.415306
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 04:29:59.787184
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 04:30:07.535997
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 04:30:09.026998
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:00:10.156272+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 10:00:10.179757+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:00:10.233612+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:35:11.118577
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:35:12.749949
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:35:14.436802
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:35:16.124759
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:40:18.094869
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:40:19.753059
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:40:21.386778
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:40:23.027182
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:45:25.084682
+NIFTY50 with interval 15m showing Bearish @ 24222.80078125
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 04:45:27.540573
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:45:29.180591
+BANKNIFTY with interval 15m showing Bearish @ 52208.8515625
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 04:45:31.610896
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:45:33.253680
+NIFTY FIN SERVICE with interval 15m showing Bearish @ 24059.05078125
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 04:45:36.038472
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:45:37.696543
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:15:38.772778+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:50:39.790297
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:50:41.481382
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:50:43.126042
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:50:44.776173
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 04:55:46.742374
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 04:55:48.397269
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 04:55:50.048752
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 04:55:51.708219
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:00:53.678985
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 05:00:55.615893
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 05:00:57.031880
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:00:58.740530
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 05:01:00.686419
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 05:01:02.115613
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:01:03.774805
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 05:01:05.708837
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 05:01:07.131833
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:01:08.793406
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:31:09.865883+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:31:09.877647+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:05:10.788162
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:05:12.437672
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:05:14.102888
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:05:15.757871
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:10:17.709969
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:10:19.360272
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:10:21.013692
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:10:22.702689
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:15:24.670810
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 05:15:26.601703
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:15:28.258936
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 05:15:30.190664
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:15:31.839528
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 05:15:33.754011
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:15:35.417413
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 10:45:36.484090+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:20:37.740640
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:20:39.398443
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:20:41.303165
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:20:42.954465
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:25:44.963429
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:25:46.613592
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:25:48.263632
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:25:49.909057
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 05:29:54.544532
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 05:30:02.345100
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 05:30:03.844385
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 05:30:08.209712
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 05:30:15.932690
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 05:30:17.421822
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 05:30:21.780796
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 05:30:29.506719
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 05:30:30.995081
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:00:32.087040+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 11:00:32.097981+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:00:32.150802+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:35:33.124447
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:35:34.784897
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:35:36.435762
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:35:38.088709
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:40:40.088987
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:40:41.752723
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:40:43.411072
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:40:45.095695
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:45:47.113521
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 05:45:49.024911
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:45:50.687156
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 05:45:52.607612
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:45:54.260847
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 05:45:56.176361
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:45:57.831158
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:15:58.897870+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:50:59.864498
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:51:01.528240
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:51:03.190549
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:51:04.862740
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 05:55:06.706296
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 05:55:08.721814
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 05:55:10.389374
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 05:55:12.425076
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:00:14.424015
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 06:00:16.342186
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 06:00:17.753712
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:00:19.413767
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 06:00:21.335151
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 06:00:22.745441
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:00:24.408120
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 06:00:26.334567
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 06:00:27.748050
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:00:29.413033
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:30:30.477115+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:30:30.488441+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:05:31.622635
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:05:33.290105
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:05:35.167216
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:05:36.836171
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:10:38.855896
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:10:40.537649
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:10:42.206077
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:10:43.877958
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:15:45.842285
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 06:15:48.262445
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:15:49.926894
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 06:15:52.249072
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:15:53.917984
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 06:15:55.843959
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:15:57.516565
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:45:58.590065+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:20:59.587827
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:21:01.257582
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:21:02.931100
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:21:04.613305
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:25:06.559792
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:25:08.241794
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:25:09.925987
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:25:11.621463
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 06:29:16.275246
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 06:29:23.985384
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 06:29:25.476727
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 06:29:29.800649
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 06:29:37.582747
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 06:29:39.068062
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 06:29:43.411724
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 06:29:51.106174
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 06:29:52.598506
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:59:53.688628+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 11:59:53.703956+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 11:59:53.753118+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:30:54.491168
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 06:30:56.417240
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 06:30:57.832985
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 06:31:02.206535
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 06:31:09.973172
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 06:31:11.477252
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:31:13.154987
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 06:31:15.077150
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 06:31:16.490658
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 06:31:20.848558
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 06:31:28.601968
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 06:31:30.096014
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:31:31.775512
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 06:31:33.710159
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 06:31:35.129668
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 06:31:39.505881
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 06:31:47.240506
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 06:31:48.731934
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:31:50.416101
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:01:51.477562+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:01:51.488314+05:30
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:01:51.581258+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 12:01:51.593464+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:01:51.645730+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:35:52.551507
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:35:54.232595
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:35:55.913166
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:35:57.597878
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:40:59.610161
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:41:01.288529
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:41:02.967599
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:41:04.654029
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:45:06.579126
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 06:45:08.506984
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:45:10.202799
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 06:45:12.132716
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:45:13.820040
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 06:45:15.751575
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:45:17.435068
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:15:18.499176+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:50:19.947873
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:50:21.635330
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:50:23.838182
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:50:25.529374
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 06:55:27.514561
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 06:55:29.202032
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 06:55:30.939160
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 06:55:32.630480
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:00:34.675425
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 07:00:36.610934
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 07:00:38.022877
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:00:39.706184
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 07:00:41.634090
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 07:00:43.050448
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:00:44.737967
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 07:00:46.664842
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 07:00:48.082914
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:00:49.770069
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:30:50.839433+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:30:50.850525+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:05:51.876939
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:05:53.591634
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:05:55.287027
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:05:56.990186
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:10:58.953659
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:11:00.656437
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:11:02.355920
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:11:04.050505
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:15:05.972917
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 07:15:07.911833
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:15:09.937248
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 07:15:11.871511
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:15:14.144248
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 07:15:16.074235
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:15:17.986328
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 12:45:19.050649+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:20:20.039106
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:20:21.793140
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:20:23.490769
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:20:25.194294
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:25:27.184250
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:25:28.892667
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:25:30.592951
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:25:32.870433
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 07:29:37.473605
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 07:29:45.176007
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 07:29:46.669966
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 07:29:51.003021
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 07:29:58.731389
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 07:30:00.232646
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 07:30:04.588784
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 07:30:12.331396
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 07:30:13.819669
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:00:14.899158+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 13:00:14.914242+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:00:14.964772+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:35:15.932461
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:35:17.640371
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:35:19.350917
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:35:21.061987
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:40:23.086809
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:40:24.797593
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:40:26.508891
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:40:28.223904
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:45:30.246272
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 07:45:32.720892
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:45:34.430549
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 07:45:36.370828
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:45:38.085334
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 07:45:40.030901
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:45:41.751447
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:15:42.814481+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:50:43.823888
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:50:45.530493
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:50:47.240979
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:50:48.959621
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 07:55:50.903508
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 07:55:52.611662
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 07:55:54.318395
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 07:55:56.041968
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:00:57.869795
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 08:00:59.798656
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 08:01:01.220677
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:01:02.925918
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 08:01:04.876183
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 08:01:06.293888
+NIFTY FIN SERVICE with interval 5m showing Bearish @ 24028.099609375
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:01:08.552879
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 08:01:10.490630
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 08:01:11.910120
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:01:13.621423
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:31:14.686475+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:31:14.696725+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:05:15.709216
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:05:17.438803
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:05:19.158908
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:05:20.893641
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:10:22.854913
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:10:24.582149
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:10:26.299882
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:10:28.018828
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:15:30.054998
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 08:15:32.245263
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:15:33.967114
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 08:15:35.922143
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:15:37.646476
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 08:15:39.579261
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:15:41.698323
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 13:45:42.774196+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:20:43.796610
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:20:45.568594
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:20:47.284618
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:20:49.000732
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:25:51.032289
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:25:52.767188
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:25:54.485679
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:25:56.222381
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 08:30:00.878515
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 08:30:08.586418
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 08:30:10.080004
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 08:30:14.455885
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 08:30:22.193811
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 08:30:23.678116
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 08:30:28.075848
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 08:30:35.836651
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 08:30:37.323865
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:00:38.416276+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 14:00:38.428623+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:00:38.485241+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:35:39.517137
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:35:41.250995
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:35:43.142123
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:35:44.867010
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:40:46.851518
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:40:48.574861
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:40:50.297084
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:40:52.032598
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:45:54.225047
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 08:45:56.167851
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:45:58.489927
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 08:46:00.470355
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:46:02.640855
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 08:46:04.592734
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:46:06.534214
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:16:07.599569+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:50:08.618187
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:50:10.374649
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:50:12.172011
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:50:13.909013
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 08:55:15.851322
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 08:55:17.592437
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 08:55:19.327092
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 08:55:21.057928
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:00:23.075226
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 09:00:25.373533
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 09:00:26.797089
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:00:28.540946
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 09:00:30.503102
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 09:00:31.931849
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:00:33.669838
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 09:00:35.618634
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 09:00:37.042125
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:00:38.786219
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:30:39.850532+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:30:39.860896+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:05:40.926039
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:05:42.661838
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:05:44.391232
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:05:46.154034
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:10:48.181121
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:10:49.923103
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:10:51.665150
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:10:53.405458
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:15:55.446499
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 09:15:57.399015
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:15:59.132648
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 09:16:01.089312
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:16:02.831349
+NIFTY FIN SERVICE with interval 15m showing Bearish @ 24038.400390625
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 09:16:05.312764
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:16:07.061518
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1y' is invalid, must be one of ['1d', '5d']")
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 14:46:08.127547+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:20:09.215544
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:20:10.960168
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:20:12.715888
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:20:14.474581
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:25:16.576265
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:25:18.388697
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:25:20.129253
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:25:21.876958
+^NSEI for interval ('1h', '6mo') with data len 2024-11-26 09:29:26.384821
+^NSEI for interval ('4h', '6mo') with data len 2024-11-26 09:29:34.125059
+^NSEI for interval ('1d', '1y') with data len 2024-11-26 09:29:35.621015
+^NSEBANK for interval ('1h', '6mo') with data len 2024-11-26 09:29:39.970870
+^NSEBANK for interval ('4h', '6mo') with data len 2024-11-26 09:29:47.708703
+^NSEBANK for interval ('1d', '1y') with data len 2024-11-26 09:29:49.197820
+NIFTY_FIN_SERVICE.NS for interval ('1h', '6mo') with data len 2024-11-26 09:29:53.554689
+NIFTY_FIN_SERVICE.NS for interval ('4h', '6mo') with data len 2024-11-26 09:30:01.307405
+NIFTY_FIN_SERVICE.NS for interval ('1d', '1y') with data len 2024-11-26 09:30:02.808525
+Error processing NIFTY_MID_SELECT.NS ('1h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 15:00:03.916436+05:30
+Error processing NIFTY_MID_SELECT.NS ('4h', '6mo'): Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 63, in main_index
+    data.columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6313, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 814, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 238, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/internals/base.py", line 98, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 6 elements
+ at time 2024-11-26 15:00:03.928503+05:30
+Error processing NIFTY_MID_SELECT.NS ('1d', '1y'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 15:00:03.977700+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:35:05.062597
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:35:06.812386
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:35:08.566528
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:35:10.317984
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:40:12.367065
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:40:14.122601
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:40:15.879988
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:40:17.646127
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:45:19.718457
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 09:45:21.676936
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:45:23.431048
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 09:45:25.386907
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:45:27.140667
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+
+1 Failed download:
+['NIFTY_MID_SELECT.NS']: YFInvalidPeriodError("%ticker%: Period '1mo' is invalid, must be one of ['1d', '5d']")
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 09:45:29.113669
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:45:30.877525
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 15:15:31.943850+05:30
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:50:32.984124
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:50:35.291956
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:50:37.050221
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:50:39.463885
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 09:55:41.580703
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 09:55:43.339880
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 09:55:45.096151
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 09:55:46.867396
+^NSEI for interval ('5m', '5d') with data len 2024-11-26 10:00:48.885075
+NIFTY50 with interval 15m showing Bearish @ 24192.94921875
+^NSEI for interval ('15m', '5d') with data len 2024-11-26 10:00:51.687344
+^NSEI for interval ('30m', '1mo') with data len 2024-11-26 10:00:53.114417
+^NSEBANK for interval ('5m', '5d') with data len 2024-11-26 10:00:55.526917
+BANKNIFTY with interval 15m showing Bearish @ 52178.5
+^NSEBANK for interval ('15m', '5d') with data len 2024-11-26 10:00:58.032283
+^NSEBANK for interval ('30m', '1mo') with data len 2024-11-26 10:00:59.458397
+NIFTY FIN SERVICE with interval 5m showing Bearish @ 24043.55078125
+NIFTY_FIN_SERVICE.NS for interval ('5m', '5d') with data len 2024-11-26 10:01:01.842650
+NIFTY FIN SERVICE with interval 15m showing Bearish @ 24043.55078125
+NIFTY_FIN_SERVICE.NS for interval ('15m', '5d') with data len 2024-11-26 10:01:04.333055
+NIFTY_FIN_SERVICE.NS for interval ('30m', '1mo') with data len 2024-11-26 10:01:05.987538
+NIFTY_MID_SELECT.NS for interval ('5m', '5d') with data len 2024-11-26 10:01:07.773284
+Error processing NIFTY_MID_SELECT.NS ('15m', '5d'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 15:31:08.849756+05:30
+Error processing NIFTY_MID_SELECT.NS ('30m', '1mo'): Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'MACD_12_26_9'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/trading_broker/main_index_divergence.py", line 69, in main_index
+    data = call_div_func(data)
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 102, in call_div_func
+    data = calculate_bullish_divergence(data, "MACD_12_26_9", 15, "macd")
+  File "/home/ubuntu/trading_broker/price_divergence_index.py", line 11, in calculate_bullish_divergence
+    lowest_macd_index = data[macd_column].rolling(window=window).apply(lambda x: x.idxmin())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'MACD_12_26_9'
+ at time 2024-11-26 15:31:08.866502+05:30

@@ -1,17 +1,19 @@
 import datetime
-print(datetime.datetime.now())
-from token2 import xts_data_token
-from xts_class2 import XTS_parse
-import configparser
-import pandas as pd
-import pandas_ta as ta
 import os
 import sys
 
 # Change to the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
-from option_div_new import round_down, round_up, generate_round_numbers
+
+print(datetime.datetime.now())
+from token2 import xts_data_token
+from xts_class2 import XTS_parse
+import configparser
+import pandas as pd
+import pandas_ta as ta
+
+#from option_div_new import round_down, round_up, generate_round_numbers
 import time
 import pytz
 import datetime
@@ -29,6 +31,57 @@ def send_to_telegram(message):
     url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}'
     response = requests.get(url)
     return response
+
+def round_down(value, base):
+    """
+    Round down to the nearest multiple of base.
+    
+    :param value: The value to be rounded down.
+    :param base: The base to round down to.
+    :return: The rounded down value.
+    """
+    return value - (value % base)
+
+def round_up(value, base):
+    """
+    Round up to the nearest multiple of base.
+    
+    :param value: The value to be rounded up.
+    :param base: The base to round up to.
+    :return: The rounded up value.
+    """
+    return value + (base - (value % base)) if value % base != 0 else value
+
+def generate_round_numbers(symbol, start):
+    """
+    Generate a list of round numbers around the start value based on the symbol.
+    
+    :param symbol: The symbol for which to generate round numbers (e.g., 'BANKNIFTY' or 'NIFTY')
+    :param start: The starting value which is not a multiple of the rounding base
+    :return: A list of round numbers around the start value
+    """
+    round_numbers = []
+
+    if symbol == 'BANKNIFTY':
+        base = 500
+    elif symbol == 'NIFTY':
+        base = 100
+    else:
+        raise ValueError("Unsupported symbol. Use 'BANKNIFTY' or 'NIFTY'.")
+
+    lower_bound = round_down(start, base)
+    upper_bound = round_up(start, base)
+
+    # Generate round numbers: 3 below and 3 above
+    for i in [-1,0,1,2]:
+        round_number = lower_bound + i * base
+        if round_number >= 0:
+            round_numbers.append(int(round_number))
+
+    # Remove duplicates and sort the result
+    round_numbers = sorted(set(round_numbers))
+
+    return round_numbers
 
 def check_buy(df, direction):
     last_row = df.iloc[-1]
@@ -102,21 +155,25 @@ def nse_quote_ltp(symbol):
 
 
 def get_dat_xts():
+    try:
+        os.remove("./data1_{}.ini".format('bnf_buy'))
+    except:
+        pass
     # Setup config and initialize XTS
     try:
         cfg = configparser.ConfigParser()
-        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
+        cfg.read("./data1_{}.ini".format('bnf_buy'))
         xts = XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
     except:
         cfg = configparser.ConfigParser()
         xts_data_token('85135d5e950fbc8b29d999', 'Vqhv461@eP', 'bnf_buy')
-        cfg.read("/home/ubuntu/trading_broker/data1_{}.ini".format('bnf_buy'))
+        cfg.read("./data1_{}.ini".format('bnf_buy'))
         xts = XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
-
+    print(xts.response)
     segment = 2
     # Timezone and timing setup
     IST = pytz.timezone('Asia/Kolkata')
-    start_time = datetime.time(9, 15, 0)
+    start_time = datetime.time(9, 12, 0)
     end_time = datetime.time(15, 30, 0)
     current_time = datetime.datetime.now(IST).time()
 
@@ -131,6 +188,7 @@ def get_dat_xts():
     symbol_list = ['NIFTYNXT50', 'FINNIFTY', 'MIDCPNIFTY', 'BANKNIFTY', 'NIFTY']
     for symbol in symbol_list:
         try:
+            print(symbol)
             payload, all_dict = nse_quote_ltp(symbol)
             current_expiry = all_dict["option_latest_expiry"].replace("-", "")
             next_expiry = all_dict["option_next_expiry"].replace("-", "")
@@ -165,8 +223,10 @@ def get_dat_xts():
         time.sleep((datetime.datetime.combine(datetime.date.today(), start_time) - datetime.datetime.combine(datetime.date.today(), current_time)).total_seconds())
     ce_symbol, pe_symbol = '', ''
     i = 0
+    print(option_id)
     while start_time <= current_time <= end_time:
         current_time = datetime.datetime.now(IST).time()
+        time.sleep(200)
         for option_symbol, opt_id in option_id.items():
             try:
                 # Read CE/PE data based on the option type in opt_id
@@ -185,7 +245,8 @@ def get_dat_xts():
 
                 # Buy and sell conditions
                 if "CE" in option_symbol:
-                    if (is_bought_ce is True) and (ce_symbol == option_symbol):
+                    if (is_bought_ce is True):
+                      if (ce_symbol == option_symbol):
                         if stoploss_ce < close_price * 0.8:
                             stoploss_ce = close_price * 0.8
                         if check_trailing_stop_loss(close_price, buy_price_ce, stoploss_ce):
@@ -200,7 +261,8 @@ def get_dat_xts():
                             send_to_telegram(f"{option_symbol} buying status @ {buy_price_ce:.2f}")
 
                 elif "PE" in option_symbol:
-                    if (is_bought_pe is True) and (pe_symbol == option_symbol):
+                    if (is_bought_pe is True):
+                      if (pe_symbol == option_symbol):
                         if stoploss_pe < close_price * 0.8:
                             stoploss_pe = close_price * 0.8
                         if check_trailing_stop_loss(close_price, buy_price_pe, stoploss_pe):
@@ -220,9 +282,9 @@ def get_dat_xts():
                     send_to_telegram("Good Morning, starting Strategy run")
                     i += 1
                 
-                time.sleep(60)
+                time.sleep(4)
             except Exception as e:
                 print(option_symbol, e)
                 continue
-
+    
 get_dat_xts()

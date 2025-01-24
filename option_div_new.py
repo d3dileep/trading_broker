@@ -138,7 +138,7 @@ def generate_round_numbers(symbol, start):
     upper_bound = round_up(start, base)
 
     # Generate round numbers: 3 below and 3 above
-    for i in [-1,0,1,2]:
+    for i in [-1,0]:
         round_number = lower_bound + i * base
         if round_number >= 0:
             round_numbers.append(int(round_number))
@@ -149,12 +149,18 @@ def generate_round_numbers(symbol, start):
     return round_numbers
 
 def get_dat_xts():
-
+    try:
+        os.remove("./data_{}.ini".format('bnf_buy'))
+        print("Deleted Successfully")
+    except:
+        print("Error in deleting")
+        pass
     try:
         cfg = configparser.ConfigParser()
         cfg.read("./data_{}.ini".format('bnf_buy'))
         xts= XTS_parse(token=cfg.get('datatoken', 'token'), userID=cfg.get('datauser', 'user'), isInvestorClient=True)
-    except:
+    except Exception as e:
+        print(e)
         cfg = configparser.ConfigParser()
         xts_data_token('1d6c9410fdb291b0a1d933','Toqb450@EN','bnf_buy')
         cfg.read("./data_{}.ini".format('bnf_buy'))
@@ -168,7 +174,7 @@ def get_dat_xts():
     IST = pytz.timezone('Asia/Kolkata')
 
     # Define start and end times in IST
-    start_time = datetime.time(0, 10, 0)
+    start_time = datetime.time(9, 15, 0)
     end_time = datetime.time(15, 30, 0)
 
     # Get current time in IST
@@ -202,6 +208,7 @@ def get_dat_xts():
                     optionType=optiontype,
                     strikePrice=strike_price)
                     option_id[f'{symbol}{strike_price}{optiontype}{expiry}']= str(response["result"][0]["ExchangeInstrumentID"])
+                    print(f'extracted option ----> {str(response["result"][0]["ExchangeInstrumentID"])}')
                 except Exception as e:
                     print("No data",e, expiry, strike_price, optiontype)
                     
@@ -220,10 +227,9 @@ def get_dat_xts():
     while current_time >= start_time and current_time <= end_time:
       current_time = datetime.datetime.now(IST).time()
       for option_symbol, opt_id in option_id.items():
-        for interval in [300]:
           try:
-            df_ce, now = xts.read_data(opt_id, interval,segment, days=3)
-            print(df_ce.shape, option_symbol)
+            df_ce, now = xts.read_data(opt_id, 300, segment, days=5)
+            print(df_ce.shape,opt_id, segment, option_symbol)
             df_ce.rename(columns={'open': 'Open', 'close': 'Close','date':'Date','low':'Low','high':'High'}, inplace=True)
             df_ce.ta.macd(append=True)
             df_ce.ta.rsi(append=True)
@@ -233,9 +239,13 @@ def get_dat_xts():
             df_ce = call_div_func(df_ce)
             ltp = df_ce["Close"].iloc[-1]
             if ((df_ce['macd_stoch_rsi_sum_divergence'].iloc[-1]== 1)):
-                send_to_telegram(f"Buy {option_symbol} @ {ltp} with interval {interval} sec")
+                send_to_telegram(f"Buy {option_symbol} @ {ltp} with MACD_STOCH_RSI")
             if ((df_ce['macd_stoch_rsi_sum_divergence'].iloc[-1]== -1)):
-                send_to_telegram(f"Sell {option_symbol} @ {ltp} with interval {interval} sec")
+                send_to_telegram(f"Sell {option_symbol} @ {ltp} with MACD_STOCH_RSI")
+            #if ((df_ce['macd_stoch_sum_divergence'].iloc[-1]== -1)):
+            #    send_to_telegram(f"Sell {option_symbol} @ {ltp} with MACD_STOCH")
+            #if ((df_ce['macd_rsi_sum_divergence'].iloc[-1]== -1)):
+            #    send_to_telegram(f"Sell {option_symbol} @ {ltp} with MACD_RSI")
           # ['date', 'open', 'high', 'low', 'close', 'volume', 'oi', 'MACD_12_26_9','MACDh_12_26_9', 'MACDs_12_26_9', 'RSI_14', 'STOCHk_14_3_3','STOCHd_14_3_3']'macd_stoch_sum_divergence','macd_rsi_sum_divergence', 'stoch_rsi_sum_divergence','macd_stoch_rsi_sum_divergence'
             if i==0:
                 send_to_telegram(f"Good Morning, starting Strategy run {current_time}")
@@ -246,7 +256,7 @@ def get_dat_xts():
             print(option_symbol, e)
             continue
       time.sleep(150)
-        
+    
 get_dat_xts()
 
 
